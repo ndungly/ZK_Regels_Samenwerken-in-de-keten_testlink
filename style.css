@@ -1,0 +1,264 @@
+/* Fonts aanroepen */
+
+
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('webfonts/titilliumweb-bold-webfont.eot');
+    src: url('webfonts/titilliumweb-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/titilliumweb-bold-webfont.woff2') format('woff2'),
+         url('webfonts/titilliumweb-bold-webfont.woff') format('woff'),
+         url('webfonts/titilliumweb-bold-webfont.ttf') format('truetype'),
+         url('webfonts/titilliumweb-bold-webfont.svg#titillium_webbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Titillium Web Light';
+    src: url('webfonts/titilliumweb-light-webfont.eot');
+    src: url('webfonts/titilliumweb-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/titilliumweb-light-webfont.woff2') format('woff2'),
+         url('webfonts/titilliumweb-light-webfont.woff') format('woff'),
+         url('webfonts/titilliumweb-light-webfont.ttf') format('truetype'),
+         url('webfonts/titilliumweb-light-webfont.svg#titillium_weblight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('webfonts/titilliumweb-regular-webfont.eot');
+    src: url('webfonts/titilliumweb-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/titilliumweb-regular-webfont.woff2') format('woff2'),
+         url('webfonts/titilliumweb-regular-webfont.woff') format('woff'),
+         url('webfonts/titilliumweb-regular-webfont.ttf') format('truetype'),
+         url('webfonts/titilliumweb-regular-webfont.svg#titillium_webregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('titilliumweb-italic-webfont.eot');
+    src: url('titilliumweb-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('titilliumweb-italic-webfont.woff2') format('woff2'),
+         url('titilliumweb-italic-webfont.woff') format('woff'),
+         url('titilliumweb-italic-webfont.ttf') format('truetype'),
+         url('titilliumweb-italic-webfont.svg#titillium_webitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+@font-face {
+    font-family: 'Titillium Web SemiBold';
+    src: url('webfonts/titilliumweb-semibold-webfont.eot');
+    src: url('webfonts/titilliumweb-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/titilliumweb-semibold-webfont.woff2') format('woff2'),
+         url('webfonts/titilliumweb-semibold-webfont.woff') format('woff'),
+         url('webfonts/titilliumweb-semibold-webfont.ttf') format('truetype'),
+         url('webfonts/titilliumweb-semibold-webfont.svg#titillium_websemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Titillium Web Semibold';
+    src: url('titilliumweb-semibolditalic-webfont.eot');
+    src: url('titilliumweb-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('titilliumweb-semibolditalic-webfont.woff2') format('woff2'),
+         url('titilliumweb-semibolditalic-webfont.woff') format('woff'),
+         url('titilliumweb-semibolditalic-webfont.ttf') format('truetype'),
+         url('titilliumweb-semibolditalic-webfont.svg#titillium_websemibold_italic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('webfonts/pt_sans-web-italic-webfont.eot');
+    src: url('webfonts/pt_sans-web-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/pt_sans-web-italic-webfont.woff2') format('woff2'),
+         url('webfonts/pt_sans-web-italic-webfont.woff') format('woff'),
+         url('webfonts/pt_sans-web-italic-webfont.svg#pt_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('webfonts/pt_sans-web-regular-webfont.eot');
+    src: url('webfonts/pt_sans-web-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/pt_sans-web-regular-webfont.woff2') format('woff2'),
+         url('webfonts/pt_sans-web-regular-webfont.woff') format('woff'),
+         url('webfonts/pt_sans-web-regular-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('webfonts/pt_sans-web-bold-webfont.eot');
+    src: url('webfonts/pt_sans-web-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/pt_sans-web-bold-webfont.woff2') format('woff2'),
+         url('webfonts/pt_sans-web-bold-webfont.woff') format('woff'),
+         url('webfonts/pt_sans-web-bold-webfont.svg#pt_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('webfonts/pt_sans-web-bolditalic-webfont.eot');
+    src: url('webfonts/pt_sans-web-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/pt_sans-web-bolditalic-webfont.woff2') format('woff2'),
+         url('webfonts/pt_sans-web-bolditalic-webfont.woff') format('woff'),
+         url('webfonts/pt_sans-web-bolditalic-webfont.svg#pt_sansbold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+
+/* CSS teksten */
+
+
+.moduleTitle {
+    font-family: "Titillium Web SemiBold";
+}
+
+.titlepage2title {
+    font-family: "Titillium Web SemiBold";
+}
+
+.titlepage2subtitle {
+    font-family: "Titillium Web";
+}
+
+.titlepage2descr {
+    font-family: "Titillium Web";
+}
+
+
+
+/* Hoofdmenu */
+
+
+.menu-titles {
+    font-family: "Titillium Web";
+    font-weight: bold;
+}
+
+.quote-txt {
+    font-family: "Titillium Web SemiBold";
+}
+
+.header-title {
+    font-family: "Titillium Web";
+    font-weight: bold;
+}
+
+.menu-toets {
+    font-family: "Titillium Web";
+    font-weight: bold;
+}
+
+
+
+/* Hoofdstukken */
+
+
+.chapter-title {
+    font-family: "Titillium Web";
+    font-weight: bold;
+}
+
+.chapter-subtitle {
+    font-family: "Titillium Web";
+}
+
+.page-title {
+    font-family: "Titillium Web";
+    font-weight: bold;
+}
+
+.body-txt {
+    font-family: "PT Sans";
+}
+
+.body-bold {
+    font-family:"PT Sans";
+    font-weight: bold;
+}
+
+.body-ul {
+    font-family: "PT Sans";
+}
+
+.geluid-txt {
+    font-family: "PT Sans";
+}
+
+.hotspot-quote {
+    font-family: "Titillium Web";
+    font-style: italic;
+}
+
+.hotspot-txt {
+    font-family: "PT Sans";
+}
+
+.slider-txt {
+    font-family: "Titillium Web";
+    font-weight: bold;
+}
+
+.slider-feedback {
+    font-family: "PT Sans";
+    font-weight: bold;
+}
+
+.wjd-quote {
+    font-family: "Titillium Web";
+    font-style: italic;
+}
+
+.toetsnr {
+    font-family: "PT Sans";
+}
+
+
+
+/* Open tekstvelden stylen - doet het helaas niet. Entry fields moeten met JS een class toegewezen krijgen. */
+
+
+.entry1 {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 2px #D4E8EB solid;
+    padding: 10px 15px;
+    color: #288E9A;
+    font-family: "Titillium Web";
+    font-size: 16px;
+    line-height: 24px;
+    width: 559px;
+    height: 112px;
+}
+
+.entry1:focus {
+    border: 2px solid #7EBBC2;
+}
