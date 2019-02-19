@@ -121,7 +121,7 @@ function init() {
   findWH()
   if( is.min ){
     trivPageTracking.InitPageTracking();
-    PreloadResources(new Array(button39807,button39723,button78268,button78274,button78280,shape7199,image7195,text7190,shape7193,text18531,shape78286,og78287,shape78289,shape78291,shape78293,text78309,og78310,shape78312,shape78314,shape78316,text78332,og78333,shape78335,shape78337,shape78339,text78355,og78356,shape78358,shape78360,shape78362,text78378,og78379,shape78381,shape78383,shape78385,text78401,og78402,shape78404,shape78406,shape78408,text78424,text78448,text78449,og78450,shape78452,text78453,image78455))
+    PreloadResources(new Array(button39807,button39723,button78268,button78274,button78280,shape7199,image7195,text7190,shape7193,text18531,shape78286,og78287,shape78289,shape78291,shape78293,text78309,og78310,shape78312,shape78314,shape78316,text78332,og78333,shape78335,shape78337,shape78339,text78355,og78356,shape78358,shape78360,shape78362,text78378,og78379,shape78381,shape78383,shape78385,text78401,og78402,shape78404,shape78406,shape78408,text78424,text78448,text78449,og78450,shape78452,shape82567,text78453,image78455))
     pageLayer = new ObjLayer(GetCurrentPageID());
     pageLayer.show(true);
     button39807.init()
@@ -169,6 +169,7 @@ function init() {
     text78449.init()
     og78450.init()
     shape78452.init()
+    shape82567.init()
     text78453.init()
     image78455.init()
     button39807.activate()
@@ -216,6 +217,7 @@ function init() {
     text78449.activate()
     og78450.activate()
     shape78452.activate()
+    shape82567.activate()
     text78453.activate()
     image78455.activate()
     window.scrollTo(0,1);
@@ -1025,7 +1027,7 @@ function shape78408onUp() {
 }
 
 if( is.min ){
-button39807 = new ObjButton('button39807', null,1066,10,126.000000,59.000000,1,59,'div','',1,0)
+button39807 = new ObjButton('button39807', null,1066,10,126.000000,59.000000,1,60,'div','',1,0)
 button39807.setUseSvgFile(1)
 button39807.setFillStyle(4)
 button39807.setUniqueFillID('a001_hoofdstukken_ds_ds_slider_button39807')
@@ -1046,7 +1048,7 @@ button39807.hasOnUp = true
 button39807.capture=4
 button39807.build()
 
-button39723 = new ObjButton('button39723', null,1202,10,151.000000,59.000000,1,60,'div','',1,0)
+button39723 = new ObjButton('button39723', null,1202,10,151.000000,59.000000,1,61,'div','',1,0)
 button39723.setUseSvgFile(1)
 button39723.setFillStyle(4)
 button39723.setUniqueFillID('a001_hoofdstukken_ds_ds_slider_button39723')
@@ -1067,7 +1069,7 @@ button39723.hasOnUp = true
 button39723.capture=4
 button39723.build()
 
-button78268 = new ObjButton('button78268', null,1294,404,35.000000,35.000000,1,61,'div','',1,0)
+button78268 = new ObjButton('button78268', null,1294,404,35.000000,35.000000,1,62,'div','',1,0)
 button78268.setUseSvgFile(1)
 button78268.setFillStyle(4)
 button78268.setUniqueFillID('a001_hoofdstukken_ds_ds_slider_button78268')
@@ -1088,7 +1090,7 @@ button78268.hasOnUp = true
 button78268.capture=4
 button78268.build()
 
-button78274 = new ObjButton('button78274', null,38,404,35.000000,35.000000,1,62,'div','',1,0)
+button78274 = new ObjButton('button78274', null,38,404,35.000000,35.000000,1,63,'div','',1,0)
 button78274.setUseSvgFile(1)
 button78274.setFillStyle(4)
 button78274.setUniqueFillID('a001_hoofdstukken_ds_ds_slider_button78274')
@@ -1109,7 +1111,7 @@ button78274.hasOnUp = true
 button78274.capture=4
 button78274.build()
 
-button78280 = new ObjButton('button78280', null,904,630,104.000000,42.000000,1,63,'div','',1,0)
+button78280 = new ObjButton('button78280', null,904,630,104.000000,42.000000,1,64,'div','',1,0)
 button78280.setUseSvgFile(1)
 button78280.setFillStyle(4)
 button78280.setUniqueFillID('a001_hoofdstukken_ds_ds_slider_button78280')
@@ -1659,7 +1661,7 @@ text78448.arrCSSStyles.push('span.text78448Font2 { font-size:16px; font-family:"
 text78448.addInnerText('<div id=\"text78448\" class=\"page-title\"><a id=\"text78448anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text78448Font1\"  >Wat denk jij?</span ><span class=\"text78448Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
 text78448.build()
 
-text78449 = new ObjText('text78449',null,712,244,511,67,1,38,null,'div',null,0 ,'body-txt')
+text78449 = new ObjText('text78449',null,712,235,511,67,1,38,null,'div',null,0 ,'body-txt')
 text78449.initSLine(0)
 text78449.initHasBullet(0)
 text78449.initRotateAngle(0,0,0)
@@ -1668,7 +1670,7 @@ text78449.initHasTextShadow(0)
 text78449.initHasBorder(0)
 text78449.initHasOutline(0)
 text78449.initHasMargin(0)
-text78449.addIe8Attr(712, 244, 511, 67, 0, 0)
+text78449.addIe8Attr(712, 235, 511, 67, 0, 0)
 text78449.addOpacity(100)
 text78449.arrCSSStyles = new Array();
 text78449.arrCSSStyles.push('span.text78449Font1 { font-size:17px; font-family:"PT Sans", sans-serif; color:#002857;}');
@@ -1679,6 +1681,7 @@ text78449.build()
 og78450 = new ObjInline('og78450',null,0,0,1253,697,1,0)
 og78450.isGrp = true
 og78450.addChild('shape78452')
+og78450.addChild('shape82567')
 og78450.addChild('text78453')
 og78450.build()
 
@@ -1696,7 +1699,21 @@ shape78452.initLineWeight(0)
 shape78452.addOpacity(100)
 shape78452.build()
 
-text78453 = new ObjText('text78453',null,712,615,497,73,0,40,null,'div',null,0 ,'slider-feedback')
+shape82567 = new ObjImage('shape82567','images/shape82567.png',null,679,330,566.000000,123.000000,0,40,'div','',0 )
+shape82567.initRotateAngle(0,0,0,-0.000000,-0.000000,565,122)
+shape82567.initHasShadow(0)
+shape82567.initHasReflection(0)
+shape82567.setUniqueFillID('a001_hoofdstukken_ds_ds_slider_shape82567')
+shape82567.addIe8Attr(679.000000, 330.000000, 566.000000, 123.000000, 0, 0)
+shape82567.initImageMap(1,'0,0,565,0,565,122,0,122,0,0','M 0.000000 0.000000 L 565.000000 0.000000 L 565.000000 122.000000 L 0.000000 122.000000 L 0.000000 0.000000 z', '', 'fill:none;"' , '')
+shape82567.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjYAAAB7CAYAAABn78quAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAElSURBVHhe7cEBDQAAAMKg909tDwcEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8qQFAfwAB/h8dWAAAAABJRU5ErkJggg==' , 'fill:url(#Text_a001_hoofdstukken_ds_ds_slider_shape82567)')
+shape82567.setUseSvgFile(1)
+shape82567.addBorder(0)
+shape82567.initLineWeight(0)
+shape82567.addOpacity(100)
+shape82567.build()
+
+text78453 = new ObjText('text78453',null,712,615,497,73,0,41,null,'div',null,0 ,'slider-feedback')
 text78453.initSLine(0)
 text78453.initHasBullet(0)
 text78453.initRotateAngle(0,0,0)
@@ -1713,7 +1730,7 @@ text78453.arrCSSStyles.push('span.text78453Font2 { font-size:16px; font-family:"
 text78453.addInnerText('<div id=\"text78453\" class=\"slider-feedback\"><a id=\"text78453anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.661\" style=\"margin-left:0px;text-indent:0px;line-height:1.660;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text78453Font1\" style=\"position:relative;top:-5px;\" >De declaratieservice voert ruim 60.000 telefoongesprekken per jaar</span ><span class=\"text78453Font2\" style=\"background-color:transparentposition:relative;top:-5px;\" >\n</span ></p >\n</div>\n');
 text78453.build()
 
-image78455 = new ObjImage('image78455','images/declaratieoverzicht_slider.png',null,134,137,535,561,1,41,'div',null, 0 )
+image78455 = new ObjImage('image78455','images/declaratieoverzicht_slider.png',null,134,137,535,561,1,42,'div',null, 0 )
 image78455.initRotateAngle(0,0,0,0,0,0,0)
 image78455.initHasShadow(0)
 image78455.initHasReflection(0)
@@ -1768,6 +1785,7 @@ arObjs.push(text78448);
 arObjs.push(text78449);
 arObjs.push(og78450);
 arObjs.push(shape78452);
+arObjs.push(shape82567);
 arObjs.push(text78453);
 arObjs.push(image78455);
 
@@ -1840,6 +1858,7 @@ if( is.min ){
     appendElement(text78448, null, null);
     appendElement(text78449, null, null);
     appendElement(shape78452, null, null);
+    appendElement(shape82567, null, null);
     appendElement(text78453, null, null);
     appendElement(image78455, null, null);
 }

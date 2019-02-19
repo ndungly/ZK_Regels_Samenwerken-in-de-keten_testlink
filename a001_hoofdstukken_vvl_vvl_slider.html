@@ -121,7 +121,7 @@ function init() {
   findWH()
   if( is.min ){
     trivPageTracking.InitPageTracking();
-    PreloadResources(new Array(button39807,button39723,button56749,button56743,button57551,shape7199,image7195,text7190,shape7193,text7191,shape14706,og16493,shape14383,shape14893,shape15066,text14724,og16504,shape14439,shape15815,shape15145,text14764,og16515,shape14468,shape15844,shape15174,text14786,og16526,shape14492,shape15873,shape15203,text14805,og16537,shape14516,shape15902,shape15232,text14821,og16548,shape14540,shape15931,shape15261,text14834,text14225,text14224,og16686,shape16563,text16630,image14195))
+    PreloadResources(new Array(button39807,button39723,button56749,button56743,button57551,shape7199,image7195,text7190,shape7193,text7191,shape14706,og16493,shape14383,shape14893,shape15066,text14724,og16504,shape14439,shape15815,shape15145,text14764,og16515,shape14468,shape15844,shape15174,text14786,og16526,shape14492,shape15873,shape15203,text14805,og16537,shape14516,shape15902,shape15232,text14821,og16548,shape14540,shape15931,shape15261,text14834,text14225,text14224,og16686,shape16563,shape82593,text16630,image14195))
     pageLayer = new ObjLayer(GetCurrentPageID());
     pageLayer.show(true);
     button39807.init()
@@ -169,6 +169,7 @@ function init() {
     text14224.init()
     og16686.init()
     shape16563.init()
+    shape82593.init()
     text16630.init()
     image14195.init()
     button39807.activate()
@@ -216,6 +217,7 @@ function init() {
     text14224.activate()
     og16686.activate()
     shape16563.activate()
+    shape82593.activate()
     text16630.activate()
     image14195.activate()
     window.scrollTo(0,1);
@@ -1025,7 +1027,7 @@ function shape15261onUp() {
 }
 
 if( is.min ){
-button39807 = new ObjButton('button39807', null,1066,10,126.000000,59.000000,1,59,'div','',1,0)
+button39807 = new ObjButton('button39807', null,1066,10,126.000000,59.000000,1,60,'div','',1,0)
 button39807.setUseSvgFile(1)
 button39807.setFillStyle(4)
 button39807.setUniqueFillID('a001_hoofdstukken_vvl_vvl_slider_button39807')
@@ -1046,7 +1048,7 @@ button39807.hasOnUp = true
 button39807.capture=4
 button39807.build()
 
-button39723 = new ObjButton('button39723', null,1202,10,151.000000,59.000000,1,60,'div','',1,0)
+button39723 = new ObjButton('button39723', null,1202,10,151.000000,59.000000,1,61,'div','',1,0)
 button39723.setUseSvgFile(1)
 button39723.setFillStyle(4)
 button39723.setUniqueFillID('a001_hoofdstukken_vvl_vvl_slider_button39723')
@@ -1067,7 +1069,7 @@ button39723.hasOnUp = true
 button39723.capture=4
 button39723.build()
 
-button56749 = new ObjButton('button56749', null,1294,404,35.000000,35.000000,1,61,'div','',1,0)
+button56749 = new ObjButton('button56749', null,1294,404,35.000000,35.000000,1,62,'div','',1,0)
 button56749.setUseSvgFile(1)
 button56749.setFillStyle(4)
 button56749.setUniqueFillID('a001_hoofdstukken_vvl_vvl_slider_button56749')
@@ -1088,7 +1090,7 @@ button56749.hasOnUp = true
 button56749.capture=4
 button56749.build()
 
-button56743 = new ObjButton('button56743', null,38,404,35.000000,35.000000,1,62,'div','',1,0)
+button56743 = new ObjButton('button56743', null,38,404,35.000000,35.000000,1,63,'div','',1,0)
 button56743.setUseSvgFile(1)
 button56743.setFillStyle(4)
 button56743.setUniqueFillID('a001_hoofdstukken_vvl_vvl_slider_button56743')
@@ -1109,7 +1111,7 @@ button56743.hasOnUp = true
 button56743.capture=4
 button56743.build()
 
-button57551 = new ObjButton('button57551', null,904,630,104.000000,42.000000,1,63,'div','',1,0)
+button57551 = new ObjButton('button57551', null,904,630,104.000000,42.000000,1,64,'div','',1,0)
 button57551.setUseSvgFile(1)
 button57551.setFillStyle(4)
 button57551.setUniqueFillID('a001_hoofdstukken_vvl_vvl_slider_button57551')
@@ -1659,7 +1661,7 @@ text14225.arrCSSStyles.push('span.text14225Font2 { font-size:16px; font-family:"
 text14225.addInnerText('<div id=\"text14225\" class=\"page-title\"><a id=\"text14225anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text14225Font1\"  >Wat denk jij?</span ><span class=\"text14225Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
 text14225.build()
 
-text14224 = new ObjText('text14224',null,712,244,483,43,1,38,null,'div',null,0 ,'body-txt')
+text14224 = new ObjText('text14224',null,712,235,483,43,1,38,null,'div',null,0 ,'body-txt')
 text14224.initSLine(1)
 text14224.initHasBullet(0)
 text14224.initRotateAngle(0,0,0)
@@ -1668,7 +1670,7 @@ text14224.initHasTextShadow(0)
 text14224.initHasBorder(0)
 text14224.initHasOutline(0)
 text14224.initHasMargin(0)
-text14224.addIe8Attr(712, 244, 483, 43, 0, 0)
+text14224.addIe8Attr(712, 235, 483, 43, 0, 0)
 text14224.addOpacity(100)
 text14224.arrCSSStyles = new Array();
 text14224.arrCSSStyles.push('span.text14224Font1 { font-size:17px; font-family:"PT Sans", sans-serif; color:#002857;}');
@@ -1679,6 +1681,7 @@ text14224.build()
 og16686 = new ObjInline('og16686',null,0,0,1253,697,1,0)
 og16686.isGrp = true
 og16686.addChild('shape16563')
+og16686.addChild('shape82593')
 og16686.addChild('text16630')
 og16686.build()
 
@@ -1696,7 +1699,21 @@ shape16563.initLineWeight(0)
 shape16563.addOpacity(100)
 shape16563.build()
 
-text16630 = new ObjText('text16630',null,712,628,497,43,0,40,null,'div',null,0 ,'slider-feedback')
+shape82593 = new ObjImage('shape82593','images/shape82593.png',null,679,330,566.000000,123.000000,0,40,'div','',0 )
+shape82593.initRotateAngle(0,0,0,-0.000000,-0.000000,565,122)
+shape82593.initHasShadow(0)
+shape82593.initHasReflection(0)
+shape82593.setUniqueFillID('a001_hoofdstukken_vvl_vvl_slider_shape82593')
+shape82593.addIe8Attr(679.000000, 330.000000, 566.000000, 123.000000, 0, 0)
+shape82593.initImageMap(1,'0,0,565,0,565,122,0,122,0,0','M 0.000000 0.000000 L 565.000000 0.000000 L 565.000000 122.000000 L 0.000000 122.000000 L 0.000000 0.000000 z', '', 'fill:none;"' , '')
+shape82593.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjYAAAB7CAYAAABn78quAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAElSURBVHhe7cEBDQAAAMKg909tDwcEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8qQFAfwAB/h8dWAAAAABJRU5ErkJggg==' , 'fill:url(#Text_a001_hoofdstukken_vvl_vvl_slider_shape82593)')
+shape82593.setUseSvgFile(1)
+shape82593.addBorder(0)
+shape82593.initLineWeight(0)
+shape82593.addOpacity(100)
+shape82593.build()
+
+text16630 = new ObjText('text16630',null,712,628,497,43,0,41,null,'div',null,0 ,'slider-feedback')
 text16630.initSLine(0)
 text16630.initHasBullet(0)
 text16630.initRotateAngle(0,0,0)
@@ -1712,7 +1729,7 @@ text16630.arrCSSStyles.push('span.text16630Font1 { font-size:19px; font-family:"
 text16630.addInnerText('<div id=\"text16630\" class=\"slider-feedback\"><a id=\"text16630anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:center;\" >\n<span class=\"text16630Font1\"  >De vervoerslijn krijgt gemiddeld 600 telefoontjes per dag\n</span ></p >\n</div>\n');
 text16630.build()
 
-image14195 = new ObjImage('image14195','images/vervoerslijn_slider.png',null,134,137,535,561,1,41,'div',null, 0 )
+image14195 = new ObjImage('image14195','images/vervoerslijn_slider.png',null,134,137,535,561,1,42,'div',null, 0 )
 image14195.initRotateAngle(0,0,0,0,0,0,0)
 image14195.initHasShadow(0)
 image14195.initHasReflection(0)
@@ -1767,6 +1784,7 @@ arObjs.push(text14225);
 arObjs.push(text14224);
 arObjs.push(og16686);
 arObjs.push(shape16563);
+arObjs.push(shape82593);
 arObjs.push(text16630);
 arObjs.push(image14195);
 
@@ -1839,6 +1857,7 @@ if( is.min ){
     appendElement(text14225, null, null);
     appendElement(text14224, null, null);
     appendElement(shape16563, null, null);
+    appendElement(shape82593, null, null);
     appendElement(text16630, null, null);
     appendElement(image14195, null, null);
 }
