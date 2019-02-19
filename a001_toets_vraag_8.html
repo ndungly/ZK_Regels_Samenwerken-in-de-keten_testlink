@@ -15,6 +15,27 @@
   body { background-color:#ffffff; }
 </style>
 
+<!--[if lt IE 7]>
+<style type="text/css">
+    #image69975 img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+    #image69975 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/progress_uit.png',sizingMethod='scale'); }
+    #image69979 img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+    #image69979 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/progress_uit.png',sizingMethod='scale'); }
+    #image69983 img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+    #image69983 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/progress_uit.png',sizingMethod='scale'); }
+    #image69987 img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+    #image69987 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/progress_uit.png',sizingMethod='scale'); }
+    #image69991 img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+    #image69991 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/progress_uit.png',sizingMethod='scale'); }
+    #image69995 img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+    #image69995 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/progress_uit.png',sizingMethod='scale'); }
+    #image69999 img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+    #image69999 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/progress_uit.png',sizingMethod='scale'); }
+    #image70003 img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+    #image70003 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/progress_aan.png',sizingMethod='scale'); }
+</style>
+<![endif]-->
+
 <!--[if lte IE 9]>
 <script>
 document.namespaces.add('v', 'urn:schemas-microsoft-com:vml', "#default#VML")
@@ -101,6 +122,24 @@ trivSetupPage();
 var arVariables = [];
 
 VarTrivSelCap = new Variable( 'VarTrivSelCap', 'none', 0, 0, null, null, 'regels_samenwerken_in_de_keten', true )
+VartoetsVoltooid = new Variable( 'VartoetsVoltooid', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets1_correct = new Variable( 'Vartoets1_correct', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets2_correct = new Variable( 'Vartoets2_correct', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets3_correct = new Variable( 'Vartoets3_correct', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets4_correct = new Variable( 'Vartoets4_correct', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets_score = new Variable( 'Vartoets_score', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets1_fout = new Variable( 'Vartoets1_fout', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets2_fout = new Variable( 'Vartoets2_fout', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets3_fout = new Variable( 'Vartoets3_fout', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets4_fout = new Variable( 'Vartoets4_fout', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets5_correct = new Variable( 'Vartoets5_correct', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets5_fout = new Variable( 'Vartoets5_fout', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets6_correct = new Variable( 'Vartoets6_correct', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets6_fout = new Variable( 'Vartoets6_fout', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets7_correct = new Variable( 'Vartoets7_correct', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets7_fout = new Variable( 'Vartoets7_fout', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets8_correct = new Variable( 'Vartoets8_correct', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+Vartoets8_fout = new Variable( 'Vartoets8_fout', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
 
 onload = init
 if( is.webkit && !is.iOSSafari )
@@ -112,23 +151,157 @@ function init() {
   findWH()
   if( is.min ){
     trivPageTracking.InitPageTracking();
-    PreloadResources(new Array(button61187,button61181,shape61198,image61194,shape61192,text61190,text61189))
+    PreloadResources(new Array(button61187,button61181,button70077,shape61198,image61194,shape61192,text61190,text61189,og69973,image69975,image69979,image69983,image69987,image69991,image69995,image69999,image70003,og69968,og69958,og69946,shape69948,text69949,shape69951,og69942,shape69944,text69945,og69938,shape69940,text69941,og69934,shape69936,text69937,og69924,shape69926,text69927,shape69929,og69920,shape69922,text69923,og69916,shape69918,text69919,og69912,shape69914,text69915,og69902,shape69904,text69905,shape69907,og69898,shape69900,text69901,og69894,shape69896,text69897,og69890,shape69892,text69893,og69880,shape69882,text69883,shape69885,og69876,shape69878,text69879,og69872,shape69874,text69875,og69868,shape69870,text69871,text69867,shape69866,text69864))
     pageLayer = new ObjLayer(GetCurrentPageID());
     pageLayer.show(true);
     button61187.init()
     button61181.init()
+    button70077.init()
     shape61198.init()
     image61194.init()
     shape61192.init()
     text61190.init()
     text61189.init()
+    og69973.init()
+    image69975.init()
+    image69979.init()
+    image69983.init()
+    image69987.init()
+    image69991.init()
+    image69995.init()
+    image69999.init()
+    image70003.init()
+    og69968.init()
+    og69958.init()
+    og69946.init()
+    shape69948.init()
+    text69949.init()
+    shape69951.init()
+    og69942.init()
+    shape69944.init()
+    text69945.init()
+    og69938.init()
+    shape69940.init()
+    text69941.init()
+    og69934.init()
+    shape69936.init()
+    text69937.init()
+    og69924.init()
+    shape69926.init()
+    text69927.init()
+    shape69929.init()
+    og69920.init()
+    shape69922.init()
+    text69923.init()
+    og69916.init()
+    shape69918.init()
+    text69919.init()
+    og69912.init()
+    shape69914.init()
+    text69915.init()
+    og69902.init()
+    shape69904.init()
+    text69905.init()
+    shape69907.init()
+    og69898.init()
+    shape69900.init()
+    text69901.init()
+    og69894.init()
+    shape69896.init()
+    text69897.init()
+    og69890.init()
+    shape69892.init()
+    text69893.init()
+    og69880.init()
+    shape69882.init()
+    text69883.init()
+    shape69885.init()
+    og69876.init()
+    shape69878.init()
+    text69879.init()
+    og69872.init()
+    shape69874.init()
+    text69875.init()
+    og69868.init()
+    shape69870.init()
+    text69871.init()
+    text69867.init()
+    shape69866.init()
+    text69864.init()
     button61187.activate()
     button61181.activate()
+    button70077.activate()
     shape61198.activate()
     image61194.activate()
     shape61192.activate()
     text61190.activate()
     text61189.activate()
+    og69973.activate()
+    image69975.activate()
+    image69979.activate()
+    image69983.activate()
+    image69987.activate()
+    image69991.activate()
+    image69995.activate()
+    image69999.activate()
+    image70003.activate()
+    og69968.activate()
+    og69958.activate()
+    og69946.activate()
+    shape69948.activate()
+    text69949.activate()
+    shape69951.activate()
+    og69942.activate()
+    shape69944.activate()
+    text69945.activate()
+    og69938.activate()
+    shape69940.activate()
+    text69941.activate()
+    og69934.activate()
+    shape69936.activate()
+    text69937.activate()
+    og69924.activate()
+    shape69926.activate()
+    text69927.activate()
+    shape69929.activate()
+    og69920.activate()
+    shape69922.activate()
+    text69923.activate()
+    og69916.activate()
+    shape69918.activate()
+    text69919.activate()
+    og69912.activate()
+    shape69914.activate()
+    text69915.activate()
+    og69902.activate()
+    shape69904.activate()
+    text69905.activate()
+    shape69907.activate()
+    og69898.activate()
+    shape69900.activate()
+    text69901.activate()
+    og69894.activate()
+    shape69896.activate()
+    text69897.activate()
+    og69890.activate()
+    shape69892.activate()
+    text69893.activate()
+    og69880.activate()
+    shape69882.activate()
+    text69883.activate()
+    shape69885.activate()
+    og69876.activate()
+    shape69878.activate()
+    text69879.activate()
+    og69872.activate()
+    shape69874.activate()
+    text69875.activate()
+    og69868.activate()
+    shape69870.activate()
+    text69871.activate()
+    text69867.activate()
+    shape69866.activate()
+    text69864.activate()
     window.scrollTo(0,1);
     var titleManagerIndexWindow = (window && window.parent && window.parent.bIsTitleManagerIndexFile) ? window.parent : null;
     if(titleManagerIndexWindow)titleManagerIndexWindow.scrollTo(0,1);
@@ -154,6 +327,9 @@ function init() {
 function loadActions(){
     if((window.bPageLoaded && window.bLoadedVariables && getDisplayWindow().pagePlayer &&
 	getDisplayWindow().pagePlayer.arLoadedPages && getDisplayWindow().pagePlayer.arLoadedPages.length == 1) || (window.bPageLoaded && window.bLoadedVariables && !isSinglePagePlayerAvail() )){
+      action70006(  );
+
+      action69976();action69977();action69980();action69981();action69984();action69985();action69988();action69989();action69992();action69993();action69996();action69997();action70000();action70001();action70004();action70005();
        postPageShowAction();
     }
     else
@@ -222,7 +398,7 @@ function trivPrevPage() {
 }
 
 function trivNextPage() {
-    trivExitPage( 'a001_toets_vraag_9.html', true )
+    trivExitPage( 'a001_toets_tussenscherm.html', true )
 }
 
 function trivUpdateTOC( bRecurse ) {
@@ -239,6 +415,20 @@ function OnDeviceRotate() {
 
 }
 
+function action70006else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action70006(fn){
+    if(VartoetsVoltooid.equals('1'))
+    {runGroup_og69968(); 
+    }else{ action70006else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
 function action61188(fn){
     {cleanupTitle('regels_samenwerken_in_de_keten'); trivExitPage('ObjLayerActionExit()',false);} 
     if(fn && typeof(fn) == 'string' ) eval(fn);
@@ -250,7 +440,7 @@ function button61187onUp() {
 }
 
 function action61182(fn){
-    trivExitPage('a001_hoofdmenu_video.html',true); 
+    trivExitPage('a001_hoofdmenu_hoofdmenu.html',true); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();
 }
@@ -259,8 +449,404 @@ function button61181onUp() {
   action61182();
 }
 
+function action70078(fn){
+    trivExitPage('a001_hoofdmenu_hoofdmenu.html',true); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function button70077onUp() {
+  action70078();
+}
+
+function action69976else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69976(fn){
+    if(Vartoets1_correct.equals('1'))
+    {image69975.actionChangeContents( "images/progress_vink.png" ); 
+    }else{ action69976else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69977else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69977(fn){
+    if(Vartoets1_fout.equals('1'))
+    {image69975.actionChangeContents( "images/progress_kruisje.png" ); 
+    }else{ action69977else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69980else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69980(fn){
+    if(Vartoets2_correct.equals('1'))
+    {image69979.actionChangeContents( "images/progress_vink.png" ); 
+    }else{ action69980else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69981else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69981(fn){
+    if(Vartoets2_fout.equals('1'))
+    {image69979.actionChangeContents( "images/progress_kruisje.png" ); 
+    }else{ action69981else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69984else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69984(fn){
+    if(Vartoets3_correct.equals('1'))
+    {image69983.actionChangeContents( "images/progress_vink.png" ); 
+    }else{ action69984else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69985else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69985(fn){
+    if(Vartoets3_fout.equals('1'))
+    {image69983.actionChangeContents( "images/progress_kruisje.png" ); 
+    }else{ action69985else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69988else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69988(fn){
+    if(Vartoets4_correct.equals('1'))
+    {image69987.actionChangeContents( "images/progress_vink.png" ); 
+    }else{ action69988else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69989else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69989(fn){
+    if(Vartoets4_fout.equals('1'))
+    {image69987.actionChangeContents( "images/progress_kruisje.png" ); 
+    }else{ action69989else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69992else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69992(fn){
+    if(Vartoets5_correct.equals('1'))
+    {image69991.actionChangeContents( "images/progress_vink.png" ); 
+    }else{ action69992else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69993else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69993(fn){
+    if(Vartoets5_fout.equals('1'))
+    {image69991.actionChangeContents( "images/progress_kruisje.png" ); 
+    }else{ action69993else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69996else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69996(fn){
+    if(Vartoets6_correct.equals('1'))
+    {image69995.actionChangeContents( "images/progress_vink.png" ); 
+    }else{ action69996else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69997else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69997(fn){
+    if(Vartoets6_fout.equals('1'))
+    {image69995.actionChangeContents( "images/progress_kruisje.png" ); 
+    }else{ action69997else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action70000else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action70000(fn){
+    if(Vartoets7_correct.equals('1'))
+    {image69999.actionChangeContents( "images/progress_vink.png" ); 
+    }else{ action70000else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action70001else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action70001(fn){
+    if(Vartoets7_fout.equals('1'))
+    {image69999.actionChangeContents( "images/progress_kruisje.png" ); 
+    }else{ action70001else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action70004else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action70004(fn){
+    if(Vartoets8_correct.equals('1'))
+    {image70003.actionChangeContents( "images/progress_vink.png" ); 
+    }else{ action70004else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action70005else(fn){
+    
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action70005(fn){
+    if(Vartoets8_fout.equals('1'))
+    {image70003.actionChangeContents( "images/progress_kruisje.png" ); 
+    }else{ action70005else();}
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69969(fn){
+    button70077.actionShow(); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69970(fn){
+    shape69866.actionShow(); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69971(fn){
+    og69934.actionShow(); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69972(fn){
+    og69946.actionShow(); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function runGroup_og69968() {
+action69969();action69970();action69971();action69972();
+}
+
+function action69959(fn){
+    trivExitPage('a001_toets_tussenscherm.html',true); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function runGroup_og69958() {
+setTimeout( 'action69959()', 100); 
+}
+
+function action69952(fn){
+    runGroup_og69958()
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69953(fn){
+    og69946.actionHide(); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69954(fn){
+    og69938.actionShow(); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69955(fn){
+    Vartoets_score.add('1'); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69956(fn){
+    Vartoets8_correct.set('1'); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69957(fn){
+    Vartoets8_fout.set('0'); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function shape69951onUp() {
+  action69952();action69953();action69954();action69955();action69956();action69957();
+}
+
+function action69930(fn){
+    runGroup_og69958()
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69931(fn){
+    og69924.actionHide(); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69932(fn){
+    og69920.actionShow(); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69933(fn){
+    Vartoets8_fout.set('1'); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function shape69929onUp() {
+  action69930();action69931();action69932();action69933();
+}
+
+function action69908(fn){
+    runGroup_og69958()
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69909(fn){
+    og69902.actionHide(); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69910(fn){
+    og69898.actionShow(); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69911(fn){
+    Vartoets8_fout.set('1'); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function shape69907onUp() {
+  action69908();action69909();action69910();action69911();
+}
+
+function action69886(fn){
+    runGroup_og69958()
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69887(fn){
+    og69880.actionHide(); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69888(fn){
+    og69876.actionShow(); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function action69889(fn){
+    Vartoets8_fout.set('1'); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
+function shape69885onUp() {
+  action69886();action69887();action69888();action69889();
+}
+
 if( is.min ){
-button61187 = new ObjButton('button61187', null,1202,10,151.000000,59.000000,1,19,'div','',1,0)
+button61187 = new ObjButton('button61187', null,1202,10,151.000000,59.000000,1,86,'div','',1,0)
 button61187.setUseSvgFile(1)
 button61187.setFillStyle(4)
 button61187.setUniqueFillID('a001_toets_vraag_8_button61187')
@@ -281,7 +867,7 @@ button61187.hasOnUp = true
 button61187.capture=4
 button61187.build()
 
-button61181 = new ObjButton('button61181', null,1066,10,126.000000,59.000000,1,20,'div','',1,0)
+button61181 = new ObjButton('button61181', null,1066,10,126.000000,59.000000,1,87,'div','',1,0)
 button61181.setUseSvgFile(1)
 button61181.setFillStyle(4)
 button61181.setUniqueFillID('a001_toets_vraag_8_button61181')
@@ -302,7 +888,28 @@ button61181.hasOnUp = true
 button61181.capture=4
 button61181.build()
 
-shape61198 = new ObjImage('shape61198','images/shape61198.png',null,-1,77,1369.000000,692.000000,1,4,'div','',0 )
+button70077 = new ObjButton('button70077', null,612,665,143.000000,42.000000,0,88,'div','',1,0)
+button70077.setUseSvgFile(1)
+button70077.setFillStyle(4)
+button70077.setUniqueFillID('a001_toets_vraag_8_button70077')
+button70077.initRotateAngle(0,0,0,-0.000000,-0.000000,142,41)
+button70077.initHasShadow(0)
+button70077.initHasReflection(0)
+button70077.setImages('images/button70077.png', 'images/button70077_down.png', 'images/button70077_over.png','images/button70077_disabled.png');
+button70077.setStateOpacity( 1.000000, 1.000000, 1.000000, 0.600000 );
+button70077.addIe8Attr(612.000000, 665.000000, 143.000000, 42.000000, 0, 0)
+button70077.addOpacity(100)
+button70077.initImageMap('0,0,142,0,142,41,0,41,0,0','M 0.000000 0.000000 L 142.000000 0.000000 L 142.000000 41.000000 L 0.000000 41.000000 L 0.000000 0.000000 z')
+button70077.setFills('                <pattern id="Picture_a001_toets_vraag_8_button70077" x="0" y="0" width="143.000000" height="42.000000" patternUnits="userSpaceOnUse">                <image xlink:href="images/button_menu_roze_groot.png" x="0" y="0" width="143.000000" height="42.000000"  preserveAspectRatio="none"/>           </pattern>       ','                <pattern id="Picture_a001_toets_vraag_8_button70077_over" x="0" y="0" width="143.000000" height="42.000000" patternUnits="userSpaceOnUse">                <image xlink:href="images/button_menu_roze_groot_hover.png" x="0" y="0" width="143.000000" height="42.000000"  preserveAspectRatio="none"/>           </pattern>       ','                <pattern id="Picture_a001_toets_vraag_8_button70077_down" x="0" y="0" width="143.000000" height="42.000000" patternUnits="userSpaceOnUse">                <image xlink:href="images/button_menu_roze_groot.png" x="0" y="0" width="143.000000" height="42.000000"  preserveAspectRatio="none"/>           </pattern>       ','                <pattern id="Picture_a001_toets_vraag_8_button70077_disabled" x="0" y="0" width="143.000000" height="42.000000" patternUnits="userSpaceOnUse">                <image xlink:href="images/button_menu_roze_groot.png" x="0" y="0" width="143.000000" height="42.000000"  preserveAspectRatio="none"/>           </pattern>       ','fill:url(#Picture_a001_toets_vraag_8_button70077);"','fill:url(#Picture_a001_toets_vraag_8_button70077_over);"','fill:url(#Picture_a001_toets_vraag_8_button70077_down);"','fill:url(#Picture_a001_toets_vraag_8_button70077_disabled);"')
+button70077.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAAqCAYAAACKsgjOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAuSURBVHhe7cExAQAAAMKg9U9tCU8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAual4CAAGTy48IAAAAAElFTkSuQmCC' , 'fill:url(#Text_a001_toets_vraag_8_button70077)', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAAqCAYAAACKsgjOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAuSURBVHhe7cExAQAAAMKg9U9tCU8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAual4CAAGTy48IAAAAAElFTkSuQmCC', 'fill:url(#Text_a001_toets_vraag_8_button70077_over)', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAAqCAYAAACKsgjOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAuSURBVHhe7cExAQAAAMKg9U9tCU8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAual4CAAGTy48IAAAAAElFTkSuQmCC', 'fill:url(#Text_a001_toets_vraag_8_button70077_down)', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAAqCAYAAACKsgjOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAuSURBVHhe7cExAQAAAMKg9U9tCU8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAual4CAAGTy48IAAAAAElFTkSuQmCC', 'fill:url(#Text_a001_toets_vraag_8_button70077_disabled)')
+button70077.setBase64Images( 'images/button_menu_roze_groot.png' , 'images/button_menu_roze_groot_hover.png' , 'images/button_menu_roze_groot.png' , 'images/button_menu_roze_groot.png' )
+button70077.initLineWeight('0')
+button70077.onUp = button70077onUp
+button70077.hasOnUp = true
+button70077.capture=4
+button70077.build()
+
+shape61198 = new ObjImage('shape61198','images/shape61198.png',null,-1,77,1369.000000,692.000000,1,5,'div','',0 )
 shape61198.initRotateAngle(0,0,0,-1.000000,-1.000000,1367,690)
 shape61198.initHasShadow(0)
 shape61198.initHasReflection(0)
@@ -316,7 +923,7 @@ shape61198.initLineWeight(1)
 shape61198.addOpacity(100)
 shape61198.build()
 
-image61194 = new ObjImage('image61194','images/logo-zk.jpg',null,21,19,134,41,1,5,'div',null, 0 )
+image61194 = new ObjImage('image61194','images/logo-zk.jpg',null,21,19,134,41,1,6,'div',null, 0 )
 image61194.initRotateAngle(0,0,0,0,0,0,0)
 image61194.initHasShadow(0)
 image61194.initHasReflection(0)
@@ -326,7 +933,7 @@ image61194.addBorder(0)
 image61194.addOpacity(100)
 image61194.build()
 
-shape61192 = new ObjImage('shape61192','images/shape61192.png',null,268,115,831.000000,608.000000,1,6,'div','',0 )
+shape61192 = new ObjImage('shape61192','images/shape61192.png',null,268,115,831.000000,608.000000,1,7,'div','',0 )
 shape61192.initRotateAngle(0,0,0,-0.000000,-0.000000,830,607)
 shape61192.initHasShadow(0)
 shape61192.initHasReflection(0)
@@ -340,7 +947,7 @@ shape61192.initLineWeight(0)
 shape61192.addOpacity(100)
 shape61192.build()
 
-text61190 = new ObjText('text61190',null,484,44,396,80,1,7,null,'div',null,0 ,'case-subtitle')
+text61190 = new ObjText('text61190',null,484,44,396,80,1,8,null,'div',null,0 ,'case-subtitle')
 text61190.initSLine(0)
 text61190.initHasBullet(0)
 text61190.initRotateAngle(0,0,0)
@@ -357,7 +964,7 @@ text61190.arrCSSStyles.push('span.text61190Font2 { font-size:16px; font-family:"
 text61190.addInnerText('<div id=\"text61190\" class=\"case-subtitle\"><a id=\"text61190anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:center;\" >\n<span class=\"text61190Font1\"  >Test je kennis</span ><span class=\"text61190Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
 text61190.build()
 
-text61189 = new ObjText('text61189',null,482,8,403,41,1,8,null,'div',null,0 ,'case-title')
+text61189 = new ObjText('text61189',null,482,8,403,41,1,9,null,'div',null,0 ,'case-title')
 text61189.initSLine(0)
 text61189.initHasBullet(0)
 text61189.initRotateAngle(0,0,0)
@@ -374,13 +981,907 @@ text61189.arrCSSStyles.push('span.text61189Font2 { font-size:16px; font-family:"
 text61189.addInnerText('<div id=\"text61189\" class=\"case-title\"><a id=\"text61189anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<table style=\"border-collapse:collapse;top:0px;position:absolute; border-spacing:0; width:100%; height:100%\">\n<tr>\n<td style=\"position: absolute;top:0px;left:0px;box-sizing:border-box;width:100%;vertical-align:top;height:100%;padding:5px\">\n<div style=\'height:100%;width:100%;overflow-y:hidden;overflow-x:hidden;\'>\n\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:center;\" >\n<span class=\"text61189Font1\"  >Samenwerken in de keten</span ><span class=\"text61189Font2\" style=\"background-color:transparent\" >\n</span ></p >\n\n\n</div></td>\n</tr>\n</table>\n</div>\n');
 text61189.build()
 
+og69973 = new ObjInline('og69973',null,0,0,856,757,1,0)
+og69973.isGrp = true
+og69973.addChild('image69975')
+og69973.addChild('image69979')
+og69973.addChild('image69983')
+og69973.addChild('image69987')
+og69973.addChild('image69991')
+og69973.addChild('image69995')
+og69973.addChild('image69999')
+og69973.addChild('image70003')
+og69973.build()
+
+image69975 = new ObjImage('image69975','images/progress_uit.png',null,512,735,22,22,1,10,'div',null, 0 )
+image69975.initRotateAngle(0,0,0,0,0,0,0)
+image69975.initHasShadow(0)
+image69975.initHasReflection(0)
+image69975.addIe8Attr(512, 735, 22, 22, 0, 0)
+image69975.initImageMap(1,'0,0,22,0,22,22,0,22,0,0','M 0 0 L 22 0 L 22 22 L 0 22 L 0 0 z')
+image69975.addBorder(0)
+image69975.addOpacity(100)
+image69975.build()
+
+image69979 = new ObjImage('image69979','images/progress_uit.png',null,558,735,22,22,1,11,'div',null, 0 )
+image69979.initRotateAngle(0,0,0,0,0,0,0)
+image69979.initHasShadow(0)
+image69979.initHasReflection(0)
+image69979.addIe8Attr(558, 735, 22, 22, 0, 0)
+image69979.initImageMap(1,'0,0,22,0,22,22,0,22,0,0','M 0 0 L 22 0 L 22 22 L 0 22 L 0 0 z')
+image69979.addBorder(0)
+image69979.addOpacity(100)
+image69979.build()
+
+image69983 = new ObjImage('image69983','images/progress_uit.png',null,604,735,22,22,1,12,'div',null, 0 )
+image69983.initRotateAngle(0,0,0,0,0,0,0)
+image69983.initHasShadow(0)
+image69983.initHasReflection(0)
+image69983.addIe8Attr(604, 735, 22, 22, 0, 0)
+image69983.initImageMap(1,'0,0,22,0,22,22,0,22,0,0','M 0 0 L 22 0 L 22 22 L 0 22 L 0 0 z')
+image69983.addBorder(0)
+image69983.addOpacity(100)
+image69983.build()
+
+image69987 = new ObjImage('image69987','images/progress_uit.png',null,650,735,22,22,1,13,'div',null, 0 )
+image69987.initRotateAngle(0,0,0,0,0,0,0)
+image69987.initHasShadow(0)
+image69987.initHasReflection(0)
+image69987.addIe8Attr(650, 735, 22, 22, 0, 0)
+image69987.initImageMap(1,'0,0,22,0,22,22,0,22,0,0','M 0 0 L 22 0 L 22 22 L 0 22 L 0 0 z')
+image69987.addBorder(0)
+image69987.addOpacity(100)
+image69987.build()
+
+image69991 = new ObjImage('image69991','images/progress_uit.png',null,696,735,22,22,1,14,'div',null, 0 )
+image69991.initRotateAngle(0,0,0,0,0,0,0)
+image69991.initHasShadow(0)
+image69991.initHasReflection(0)
+image69991.addIe8Attr(696, 735, 22, 22, 0, 0)
+image69991.initImageMap(1,'0,0,22,0,22,22,0,22,0,0','M 0 0 L 22 0 L 22 22 L 0 22 L 0 0 z')
+image69991.addBorder(0)
+image69991.addOpacity(100)
+image69991.build()
+
+image69995 = new ObjImage('image69995','images/progress_uit.png',null,742,735,22,22,1,15,'div',null, 0 )
+image69995.initRotateAngle(0,0,0,0,0,0,0)
+image69995.initHasShadow(0)
+image69995.initHasReflection(0)
+image69995.addIe8Attr(742, 735, 22, 22, 0, 0)
+image69995.initImageMap(1,'0,0,22,0,22,22,0,22,0,0','M 0 0 L 22 0 L 22 22 L 0 22 L 0 0 z')
+image69995.addBorder(0)
+image69995.addOpacity(100)
+image69995.build()
+
+image69999 = new ObjImage('image69999','images/progress_uit.png',null,788,735,22,22,1,16,'div',null, 0 )
+image69999.initRotateAngle(0,0,0,0,0,0,0)
+image69999.initHasShadow(0)
+image69999.initHasReflection(0)
+image69999.addIe8Attr(788, 735, 22, 22, 0, 0)
+image69999.initImageMap(1,'0,0,22,0,22,22,0,22,0,0','M 0 0 L 22 0 L 22 22 L 0 22 L 0 0 z')
+image69999.addBorder(0)
+image69999.addOpacity(100)
+image69999.build()
+
+image70003 = new ObjImage('image70003','images/progress_aan.png',null,834,735,22,22,1,17,'div',null, 0 )
+image70003.initRotateAngle(0,0,0,0,0,0,0)
+image70003.initHasShadow(0)
+image70003.initHasReflection(0)
+image70003.addIe8Attr(834, 735, 22, 22, 0, 0)
+image70003.initImageMap(1,'0,0,22,0,22,22,0,22,0,0','M 0 0 L 22 0 L 22 22 L 0 22 L 0 0 z')
+image70003.addBorder(0)
+image70003.addOpacity(100)
+image70003.build()
+
+og69968 = new ObjInline('og69968',null,0,0,0,0,1,0)
+og69968.isGrp = true
+og69968.build()
+
+og69958 = new ObjInline('og69958',null,0,0,0,0,1,0)
+og69958.isGrp = true
+og69958.build()
+
+og69946 = new ObjInline('og69946',null,0,0,997,440,1,0)
+og69946.isGrp = true
+og69946.addChild('shape69948')
+og69946.addChild('text69949')
+og69946.addChild('shape69951')
+og69946.build()
+
+shape69948 = new ObjImage('shape69948','images/shape69948.png',null,369,375,629.000000,61.000000,1,18,'div','',0 )
+shape69948.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69948.initHasShadow(1)
+shape69948.initHasReflection(0)
+shape69948.setUniqueFillID('a001_toets_vraag_8_shape69948')
+shape69948.addIe8Attr(369.000000, 375.000000, 629.000000, 61.000000, 0, 0)
+shape69948.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#D6EFF0;"' , '')
+shape69948.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69948)')
+shape69948.setUseSvgFile(1)
+shape69948.addShadow(270,2,1.000000,'b1','e0','e2',177,224,226,0.000000,2)
+shape69948.addBorder(0)
+shape69948.initLineWeight(0)
+shape69948.addOpacity(100)
+shape69948.build()
+
+text69949 = new ObjText('text69949',null,395,397,498,33,1,19,null,'div',null,0 ,'answer-txt')
+text69949.initSLine(1)
+text69949.initHasBullet(0)
+text69949.initRotateAngle(0,0,0)
+text69949.initHasOuterShadow(0)
+text69949.initHasTextShadow(0)
+text69949.initHasBorder(0)
+text69949.initHasOutline(0)
+text69949.initHasMargin(0)
+text69949.addIe8Attr(395, 397, 498, 33, 0, 0)
+text69949.addOpacity(100)
+text69949.arrCSSStyles = new Array();
+text69949.arrCSSStyles.push('span.text69949Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#0068bd;}');
+text69949.arrCSSStyles.push('span.text69949Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69949.addInnerText('<div id=\"text69949\" class=\"answer-txt\"><a id=\"text69949anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.691\" style=\"margin-left:0px;text-indent:0px;line-height:1.620;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69949Font1\" style=\"position:relative;top:-4px;\" >Overleggen met de declaratieservice.</span ><span class=\"text69949Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text69949.build()
+
+shape69951 = new ObjImage('shape69951','images/shape69951.png',null,369,375,629.000000,66.000000,1,20,'div','',0 )
+shape69951.initRotateAngle(0,0,0,-0.000000,-0.000000,628,65)
+shape69951.initHasShadow(0)
+shape69951.initHasReflection(0)
+shape69951.setUniqueFillID('a001_toets_vraag_8_shape69951')
+shape69951.addIe8Attr(369.000000, 375.000000, 629.000000, 66.000000, 0, 0)
+shape69951.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,60,628,62,627,64,625,65,623,65,5,65,3,65,2,64,0,62,0,60,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 60.000000 L 627.625000 61.937500 L 626.562500 63.562500 L 624.937500 64.625000 L 623.000000 65.000000 L 5.000000 65.000000 L 3.125000 64.625000 L 1.500000 63.562500 L 0.375000 61.937500 L 0.000000 60.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:none;"' , '')
+shape69951.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAABCCAYAAAAxFyBoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC4SURBVHhe7cEBDQAAAMKg909tDwcEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANyrAYkIAAHalltWAAAAAElFTkSuQmCC' , 'fill:url(#Text_a001_toets_vraag_8_shape69951)')
+shape69951.setUseSvgFile(1)
+shape69951.addBorder(0)
+shape69951.initLineWeight(0)
+shape69951.addOpacity(100)
+shape69951.onUp = shape69951onUp
+shape69951.hasOnUp = true
+shape69951.capture=4
+shape69951.build()
+
+og69942 = new ObjInline('og69942',null,0,0,997,435,1,0)
+og69942.isGrp = true
+og69942.addChild('shape69944')
+og69942.addChild('text69945')
+og69942.build()
+
+shape69944 = new ObjImage('shape69944','images/shape69944.png',null,369,375,629.000000,61.000000,0,21,'div','',0 )
+shape69944.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69944.initHasShadow(1)
+shape69944.initHasReflection(0)
+shape69944.setUniqueFillID('a001_toets_vraag_8_shape69944')
+shape69944.addIe8Attr(369.000000, 375.000000, 629.000000, 61.000000, 0, 0)
+shape69944.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#DD1515;"' , '')
+shape69944.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69944)')
+shape69944.setUseSvgFile(1)
+shape69944.addShadow(270,2,1.000000,'b5','2','2',181,2,2,0.000000,2)
+shape69944.addBorder(0)
+shape69944.initLineWeight(0)
+shape69944.addOpacity(100)
+shape69944.build()
+
+text69945 = new ObjText('text69945',null,395,397,497,30,0,22,null,'div',null,0 ,'answer-txt')
+text69945.initSLine(1)
+text69945.initHasBullet(0)
+text69945.initRotateAngle(0,0,0)
+text69945.initHasOuterShadow(0)
+text69945.initHasTextShadow(0)
+text69945.initHasBorder(0)
+text69945.initHasOutline(0)
+text69945.initHasMargin(0)
+text69945.addIe8Attr(395, 397, 497, 30, 0, 0)
+text69945.addOpacity(100)
+text69945.arrCSSStyles = new Array();
+text69945.arrCSSStyles.push('span.text69945Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#ffffff;}');
+text69945.arrCSSStyles.push('span.text69945Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69945.addInnerText('<div id=\"text69945\" class=\"answer-txt\"><a id=\"text69945anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.691\" style=\"margin-left:0px;text-indent:0px;line-height:1.620;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69945Font1\" style=\"position:relative;top:-4px;\" >Overleggen met de declaratieservice.</span ><span class=\"text69945Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text69945.build()
+
+og69938 = new ObjInline('og69938',null,0,0,997,435,1,0)
+og69938.isGrp = true
+og69938.addChild('shape69940')
+og69938.addChild('text69941')
+og69938.build()
+
+shape69940 = new ObjImage('shape69940','images/shape69940.png',null,369,375,629.000000,61.000000,0,23,'div','',0 )
+shape69940.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69940.initHasShadow(1)
+shape69940.initHasReflection(0)
+shape69940.setUniqueFillID('a001_toets_vraag_8_shape69940')
+shape69940.addIe8Attr(369.000000, 375.000000, 629.000000, 61.000000, 0, 0)
+shape69940.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#4B973E;"' , '')
+shape69940.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69940)')
+shape69940.setUseSvgFile(1)
+shape69940.addShadow(270,2,1.000000,'22','6a','17',34,106,23,0.000000,2)
+shape69940.addBorder(0)
+shape69940.initLineWeight(0)
+shape69940.addOpacity(100)
+shape69940.build()
+
+text69941 = new ObjText('text69941',null,395,397,497,37,0,24,null,'div',null,0 ,'answer-txt')
+text69941.initSLine(1)
+text69941.initHasBullet(0)
+text69941.initRotateAngle(0,0,0)
+text69941.initHasOuterShadow(0)
+text69941.initHasTextShadow(0)
+text69941.initHasBorder(0)
+text69941.initHasOutline(0)
+text69941.initHasMargin(0)
+text69941.addIe8Attr(395, 397, 497, 37, 0, 0)
+text69941.addOpacity(100)
+text69941.arrCSSStyles = new Array();
+text69941.arrCSSStyles.push('span.text69941Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#ffffff;}');
+text69941.arrCSSStyles.push('span.text69941Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69941.addInnerText('<div id=\"text69941\" class=\"answer-txt\"><a id=\"text69941anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.691\" style=\"margin-left:0px;text-indent:0px;line-height:1.620;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69941Font1\" style=\"position:relative;top:-4px;\" >Overleggen met de declaratieservice.</span ><span class=\"text69941Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text69941.build()
+
+og69934 = new ObjInline('og69934',null,0,0,997,435,1,0)
+og69934.isGrp = true
+og69934.addChild('shape69936')
+og69934.addChild('text69937')
+og69934.build()
+
+shape69936 = new ObjImage('shape69936','images/shape69936.png',null,369,375,629.000000,61.000000,0,25,'div','',0 )
+shape69936.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69936.initHasShadow(1)
+shape69936.initHasReflection(0)
+shape69936.setUniqueFillID('a001_toets_vraag_8_shape69936')
+shape69936.addIe8Attr(369.000000, 375.000000, 629.000000, 61.000000, 0, 0)
+shape69936.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#0068BD;"' , '')
+shape69936.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69936)')
+shape69936.setUseSvgFile(1)
+shape69936.addShadow(270,2,1.000000,'0','28','57',0,40,87,0.000000,2)
+shape69936.addBorder(0)
+shape69936.initLineWeight(0)
+shape69936.addOpacity(100)
+shape69936.build()
+
+text69937 = new ObjText('text69937',null,395,397,497,35,0,26,null,'div',null,0 ,'answer-txt')
+text69937.initSLine(1)
+text69937.initHasBullet(0)
+text69937.initRotateAngle(0,0,0)
+text69937.initHasOuterShadow(0)
+text69937.initHasTextShadow(0)
+text69937.initHasBorder(0)
+text69937.initHasOutline(0)
+text69937.initHasMargin(0)
+text69937.addIe8Attr(395, 397, 497, 35, 0, 0)
+text69937.addOpacity(100)
+text69937.arrCSSStyles = new Array();
+text69937.arrCSSStyles.push('span.text69937Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#ffffff;}');
+text69937.arrCSSStyles.push('span.text69937Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69937.addInnerText('<div id=\"text69937\" class=\"answer-txt\"><a id=\"text69937anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.691\" style=\"margin-left:0px;text-indent:0px;line-height:1.620;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69937Font1\" style=\"position:relative;top:-4px;\" >Overleggen met de declaratieservice.</span ><span class=\"text69937Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text69937.build()
+
+og69924 = new ObjInline('og69924',null,0,0,997,511,1,0)
+og69924.isGrp = true
+og69924.addChild('shape69926')
+og69924.addChild('text69927')
+og69924.addChild('shape69929')
+og69924.build()
+
+shape69926 = new ObjImage('shape69926','images/shape69926.png',null,369,446,629.000000,61.000000,1,27,'div','',0 )
+shape69926.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69926.initHasShadow(1)
+shape69926.initHasReflection(0)
+shape69926.setUniqueFillID('a001_toets_vraag_8_shape69926')
+shape69926.addIe8Attr(369.000000, 446.000000, 629.000000, 61.000000, 0, 0)
+shape69926.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#D6EFF0;"' , '')
+shape69926.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69926)')
+shape69926.setUseSvgFile(1)
+shape69926.addShadow(270,2,1.000000,'b1','e0','e2',177,224,226,0.000000,2)
+shape69926.addBorder(0)
+shape69926.initLineWeight(0)
+shape69926.addOpacity(100)
+shape69926.build()
+
+text69927 = new ObjText('text69927',null,395,468,498,30,1,28,null,'div',null,0 ,'answer-txt')
+text69927.initSLine(1)
+text69927.initHasBullet(0)
+text69927.initRotateAngle(0,0,0)
+text69927.initHasOuterShadow(0)
+text69927.initHasTextShadow(0)
+text69927.initHasBorder(0)
+text69927.initHasOutline(0)
+text69927.initHasMargin(0)
+text69927.addIe8Attr(395, 468, 498, 30, 0, 0)
+text69927.addOpacity(100)
+text69927.arrCSSStyles = new Array();
+text69927.arrCSSStyles.push('span.text69927Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#0068bd;}');
+text69927.addInnerText('<div id=\"text69927\" class=\"answer-txt\"><a id=\"text69927anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69927Font1\"  >Een WOF sturen naar declaratieservice.\n</span ></p >\n</div>\n');
+text69927.build()
+
+shape69929 = new ObjImage('shape69929','images/shape69929.png',null,369,446,629.000000,66.000000,1,29,'div','',0 )
+shape69929.initRotateAngle(0,0,0,-0.000000,-0.000000,628,65)
+shape69929.initHasShadow(0)
+shape69929.initHasReflection(0)
+shape69929.setUniqueFillID('a001_toets_vraag_8_shape69929')
+shape69929.addIe8Attr(369.000000, 446.000000, 629.000000, 66.000000, 0, 0)
+shape69929.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,60,628,62,627,64,625,65,623,65,5,65,3,65,2,64,0,62,0,60,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 60.000000 L 627.625000 61.937500 L 626.562500 63.562500 L 624.937500 64.625000 L 623.000000 65.000000 L 5.000000 65.000000 L 3.125000 64.625000 L 1.500000 63.562500 L 0.375000 61.937500 L 0.000000 60.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:none;"' , '')
+shape69929.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAABCCAYAAAAxFyBoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC4SURBVHhe7cEBDQAAAMKg909tDwcEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANyrAYkIAAHalltWAAAAAElFTkSuQmCC' , 'fill:url(#Text_a001_toets_vraag_8_shape69929)')
+shape69929.setUseSvgFile(1)
+shape69929.addBorder(0)
+shape69929.initLineWeight(0)
+shape69929.addOpacity(100)
+shape69929.onUp = shape69929onUp
+shape69929.hasOnUp = true
+shape69929.capture=4
+shape69929.build()
+
+og69920 = new ObjInline('og69920',null,0,0,997,506,1,0)
+og69920.isGrp = true
+og69920.addChild('shape69922')
+og69920.addChild('text69923')
+og69920.build()
+
+shape69922 = new ObjImage('shape69922','images/shape69922.png',null,369,446,629.000000,61.000000,0,30,'div','',0 )
+shape69922.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69922.initHasShadow(1)
+shape69922.initHasReflection(0)
+shape69922.setUniqueFillID('a001_toets_vraag_8_shape69922')
+shape69922.addIe8Attr(369.000000, 446.000000, 629.000000, 61.000000, 0, 0)
+shape69922.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#DD1515;"' , '')
+shape69922.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69922)')
+shape69922.setUseSvgFile(1)
+shape69922.addShadow(270,2,1.000000,'b5','2','2',181,2,2,0.000000,2)
+shape69922.addBorder(0)
+shape69922.initLineWeight(0)
+shape69922.addOpacity(100)
+shape69922.build()
+
+text69923 = new ObjText('text69923',null,395,468,497,26,0,31,null,'div',null,0 ,'answer-txt')
+text69923.initSLine(1)
+text69923.initHasBullet(0)
+text69923.initRotateAngle(0,0,0)
+text69923.initHasOuterShadow(0)
+text69923.initHasTextShadow(0)
+text69923.initHasBorder(0)
+text69923.initHasOutline(0)
+text69923.initHasMargin(0)
+text69923.addIe8Attr(395, 468, 497, 26, 0, 0)
+text69923.addOpacity(100)
+text69923.arrCSSStyles = new Array();
+text69923.arrCSSStyles.push('span.text69923Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#ffffff;}');
+text69923.arrCSSStyles.push('span.text69923Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69923.addInnerText('<div id=\"text69923\" class=\"answer-txt\"><a id=\"text69923anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69923Font1\"  >Een WOF sturen naar declaratieservice.</span ><span class=\"text69923Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
+text69923.build()
+
+og69916 = new ObjInline('og69916',null,0,0,997,507,1,0)
+og69916.isGrp = true
+og69916.addChild('shape69918')
+og69916.addChild('text69919')
+og69916.build()
+
+shape69918 = new ObjImage('shape69918','images/shape69918.png',null,369,446,629.000000,61.000000,0,32,'div','',0 )
+shape69918.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69918.initHasShadow(1)
+shape69918.initHasReflection(0)
+shape69918.setUniqueFillID('a001_toets_vraag_8_shape69918')
+shape69918.addIe8Attr(369.000000, 446.000000, 629.000000, 61.000000, 0, 0)
+shape69918.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#4B973E;"' , '')
+shape69918.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69918)')
+shape69918.setUseSvgFile(1)
+shape69918.addShadow(270,2,1.000000,'22','6a','17',34,106,23,0.000000,2)
+shape69918.addBorder(0)
+shape69918.initLineWeight(0)
+shape69918.addOpacity(100)
+shape69918.build()
+
+text69919 = new ObjText('text69919',null,395,468,497,39,0,33,null,'div',null,0 ,'answer-txt')
+text69919.initSLine(1)
+text69919.initHasBullet(0)
+text69919.initRotateAngle(0,0,0)
+text69919.initHasOuterShadow(0)
+text69919.initHasTextShadow(0)
+text69919.initHasBorder(0)
+text69919.initHasOutline(0)
+text69919.initHasMargin(0)
+text69919.addIe8Attr(395, 468, 497, 39, 0, 0)
+text69919.addOpacity(100)
+text69919.arrCSSStyles = new Array();
+text69919.arrCSSStyles.push('span.text69919Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#ffffff;}');
+text69919.arrCSSStyles.push('span.text69919Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69919.addInnerText('<div id=\"text69919\" class=\"answer-txt\"><a id=\"text69919anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69919Font1\"  >Een WOF sturen naar declaratieservice.</span ><span class=\"text69919Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
+text69919.build()
+
+og69912 = new ObjInline('og69912',null,0,0,997,507,1,0)
+og69912.isGrp = true
+og69912.addChild('shape69914')
+og69912.addChild('text69915')
+og69912.build()
+
+shape69914 = new ObjImage('shape69914','images/shape69914.png',null,369,446,629.000000,61.000000,0,34,'div','',0 )
+shape69914.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69914.initHasShadow(1)
+shape69914.initHasReflection(0)
+shape69914.setUniqueFillID('a001_toets_vraag_8_shape69914')
+shape69914.addIe8Attr(369.000000, 446.000000, 629.000000, 61.000000, 0, 0)
+shape69914.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#0068BD;"' , '')
+shape69914.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69914)')
+shape69914.setUseSvgFile(1)
+shape69914.addShadow(270,2,1.000000,'0','28','57',0,40,87,0.000000,2)
+shape69914.addBorder(0)
+shape69914.initLineWeight(0)
+shape69914.addOpacity(100)
+shape69914.build()
+
+text69915 = new ObjText('text69915',null,395,468,497,39,0,35,null,'div',null,0 ,'answer-txt')
+text69915.initSLine(1)
+text69915.initHasBullet(0)
+text69915.initRotateAngle(0,0,0)
+text69915.initHasOuterShadow(0)
+text69915.initHasTextShadow(0)
+text69915.initHasBorder(0)
+text69915.initHasOutline(0)
+text69915.initHasMargin(0)
+text69915.addIe8Attr(395, 468, 497, 39, 0, 0)
+text69915.addOpacity(100)
+text69915.arrCSSStyles = new Array();
+text69915.arrCSSStyles.push('span.text69915Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#ffffff;}');
+text69915.arrCSSStyles.push('span.text69915Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69915.addInnerText('<div id=\"text69915\" class=\"answer-txt\"><a id=\"text69915anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69915Font1\"  >Een WOF sturen naar declaratieservice.</span ><span class=\"text69915Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
+text69915.build()
+
+og69902 = new ObjInline('og69902',null,0,0,997,582,1,0)
+og69902.isGrp = true
+og69902.addChild('shape69904')
+og69902.addChild('text69905')
+og69902.addChild('shape69907')
+og69902.build()
+
+shape69904 = new ObjImage('shape69904','images/shape69904.png',null,369,517,629.000000,61.000000,1,36,'div','',0 )
+shape69904.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69904.initHasShadow(1)
+shape69904.initHasReflection(0)
+shape69904.setUniqueFillID('a001_toets_vraag_8_shape69904')
+shape69904.addIe8Attr(369.000000, 517.000000, 629.000000, 61.000000, 0, 0)
+shape69904.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#D6EFF0;"' , '')
+shape69904.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69904)')
+shape69904.setUseSvgFile(1)
+shape69904.addShadow(270,2,1.000000,'b1','e0','e2',177,224,226,0.000000,2)
+shape69904.addBorder(0)
+shape69904.initLineWeight(0)
+shape69904.addOpacity(100)
+shape69904.build()
+
+text69905 = new ObjText('text69905',null,395,540,498,31,1,37,null,'div',null,0 ,'answer-txt')
+text69905.initSLine(1)
+text69905.initHasBullet(0)
+text69905.initRotateAngle(0,0,0)
+text69905.initHasOuterShadow(0)
+text69905.initHasTextShadow(0)
+text69905.initHasBorder(0)
+text69905.initHasOutline(0)
+text69905.initHasMargin(0)
+text69905.addIe8Attr(395, 540, 498, 31, 0, 0)
+text69905.addOpacity(100)
+text69905.arrCSSStyles = new Array();
+text69905.arrCSSStyles.push('span.text69905Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#0068bd;}');
+text69905.arrCSSStyles.push('span.text69905Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69905.addInnerText('<div id=\"text69905\" class=\"answer-txt\"><a id=\"text69905anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.691\" style=\"margin-left:0px;text-indent:0px;line-height:1.620;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69905Font1\" style=\"position:relative;top:-4px;\" >Doorverbinden met declaratieservice.</span ><span class=\"text69905Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text69905.build()
+
+shape69907 = new ObjImage('shape69907','images/shape69907.png',null,369,517,629.000000,66.000000,1,38,'div','',0 )
+shape69907.initRotateAngle(0,0,0,-0.000000,-0.000000,628,65)
+shape69907.initHasShadow(0)
+shape69907.initHasReflection(0)
+shape69907.setUniqueFillID('a001_toets_vraag_8_shape69907')
+shape69907.addIe8Attr(369.000000, 517.000000, 629.000000, 66.000000, 0, 0)
+shape69907.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,60,628,62,627,64,625,65,623,65,5,65,3,65,2,64,0,62,0,60,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 60.000000 L 627.625000 61.937500 L 626.562500 63.562500 L 624.937500 64.625000 L 623.000000 65.000000 L 5.000000 65.000000 L 3.125000 64.625000 L 1.500000 63.562500 L 0.375000 61.937500 L 0.000000 60.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:none;"' , '')
+shape69907.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAABCCAYAAAAxFyBoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC4SURBVHhe7cEBDQAAAMKg909tDwcEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANyrAYkIAAHalltWAAAAAElFTkSuQmCC' , 'fill:url(#Text_a001_toets_vraag_8_shape69907)')
+shape69907.setUseSvgFile(1)
+shape69907.addBorder(0)
+shape69907.initLineWeight(0)
+shape69907.addOpacity(100)
+shape69907.onUp = shape69907onUp
+shape69907.hasOnUp = true
+shape69907.capture=4
+shape69907.build()
+
+og69898 = new ObjInline('og69898',null,0,0,997,577,1,0)
+og69898.isGrp = true
+og69898.addChild('shape69900')
+og69898.addChild('text69901')
+og69898.build()
+
+shape69900 = new ObjImage('shape69900','images/shape69900.png',null,369,517,629.000000,61.000000,0,39,'div','',0 )
+shape69900.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69900.initHasShadow(1)
+shape69900.initHasReflection(0)
+shape69900.setUniqueFillID('a001_toets_vraag_8_shape69900')
+shape69900.addIe8Attr(369.000000, 517.000000, 629.000000, 61.000000, 0, 0)
+shape69900.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#DD1515;"' , '')
+shape69900.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69900)')
+shape69900.setUseSvgFile(1)
+shape69900.addShadow(270,2,1.000000,'b5','2','2',181,2,2,0.000000,2)
+shape69900.addBorder(0)
+shape69900.initLineWeight(0)
+shape69900.addOpacity(100)
+shape69900.build()
+
+text69901 = new ObjText('text69901',null,395,540,497,36,0,40,null,'div',null,0 ,'answer-txt')
+text69901.initSLine(1)
+text69901.initHasBullet(0)
+text69901.initRotateAngle(0,0,0)
+text69901.initHasOuterShadow(0)
+text69901.initHasTextShadow(0)
+text69901.initHasBorder(0)
+text69901.initHasOutline(0)
+text69901.initHasMargin(0)
+text69901.addIe8Attr(395, 540, 497, 36, 0, 0)
+text69901.addOpacity(100)
+text69901.arrCSSStyles = new Array();
+text69901.arrCSSStyles.push('span.text69901Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#ffffff;}');
+text69901.arrCSSStyles.push('span.text69901Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69901.addInnerText('<div id=\"text69901\" class=\"answer-txt\"><a id=\"text69901anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.691\" style=\"margin-left:0px;text-indent:0px;line-height:1.620;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69901Font1\" style=\"position:relative;top:-4px;\" >Doorverbinden met declaratieservice.</span ><span class=\"text69901Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text69901.build()
+
+og69894 = new ObjInline('og69894',null,0,0,997,579,1,0)
+og69894.isGrp = true
+og69894.addChild('shape69896')
+og69894.addChild('text69897')
+og69894.build()
+
+shape69896 = new ObjImage('shape69896','images/shape69896.png',null,369,517,629.000000,61.000000,0,41,'div','',0 )
+shape69896.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69896.initHasShadow(1)
+shape69896.initHasReflection(0)
+shape69896.setUniqueFillID('a001_toets_vraag_8_shape69896')
+shape69896.addIe8Attr(369.000000, 517.000000, 629.000000, 61.000000, 0, 0)
+shape69896.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#4B973E;"' , '')
+shape69896.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69896)')
+shape69896.setUseSvgFile(1)
+shape69896.addShadow(270,2,1.000000,'22','6a','17',34,106,23,0.000000,2)
+shape69896.addBorder(0)
+shape69896.initLineWeight(0)
+shape69896.addOpacity(100)
+shape69896.build()
+
+text69897 = new ObjText('text69897',null,395,540,497,39,0,42,null,'div',null,0 ,'answer-txt')
+text69897.initSLine(1)
+text69897.initHasBullet(0)
+text69897.initRotateAngle(0,0,0)
+text69897.initHasOuterShadow(0)
+text69897.initHasTextShadow(0)
+text69897.initHasBorder(0)
+text69897.initHasOutline(0)
+text69897.initHasMargin(0)
+text69897.addIe8Attr(395, 540, 497, 39, 0, 0)
+text69897.addOpacity(100)
+text69897.arrCSSStyles = new Array();
+text69897.arrCSSStyles.push('span.text69897Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#ffffff;}');
+text69897.arrCSSStyles.push('span.text69897Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69897.addInnerText('<div id=\"text69897\" class=\"answer-txt\"><a id=\"text69897anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.691\" style=\"margin-left:0px;text-indent:0px;line-height:1.620;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69897Font1\" style=\"position:relative;top:-4px;\" >Doorverbinden met declaratieservice.</span ><span class=\"text69897Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text69897.build()
+
+og69890 = new ObjInline('og69890',null,0,0,997,577,1,0)
+og69890.isGrp = true
+og69890.addChild('shape69892')
+og69890.addChild('text69893')
+og69890.build()
+
+shape69892 = new ObjImage('shape69892','images/shape69892.png',null,369,517,629.000000,61.000000,0,43,'div','',0 )
+shape69892.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69892.initHasShadow(1)
+shape69892.initHasReflection(0)
+shape69892.setUniqueFillID('a001_toets_vraag_8_shape69892')
+shape69892.addIe8Attr(369.000000, 517.000000, 629.000000, 61.000000, 0, 0)
+shape69892.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#0068BD;"' , '')
+shape69892.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69892)')
+shape69892.setUseSvgFile(1)
+shape69892.addShadow(270,2,1.000000,'0','28','57',0,40,87,0.000000,2)
+shape69892.addBorder(0)
+shape69892.initLineWeight(0)
+shape69892.addOpacity(100)
+shape69892.build()
+
+text69893 = new ObjText('text69893',null,395,540,497,37,0,44,null,'div',null,0 ,'answer-txt')
+text69893.initSLine(1)
+text69893.initHasBullet(0)
+text69893.initRotateAngle(0,0,0)
+text69893.initHasOuterShadow(0)
+text69893.initHasTextShadow(0)
+text69893.initHasBorder(0)
+text69893.initHasOutline(0)
+text69893.initHasMargin(0)
+text69893.addIe8Attr(395, 540, 497, 37, 0, 0)
+text69893.addOpacity(100)
+text69893.arrCSSStyles = new Array();
+text69893.arrCSSStyles.push('span.text69893Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#ffffff;}');
+text69893.arrCSSStyles.push('span.text69893Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69893.addInnerText('<div id=\"text69893\" class=\"answer-txt\"><a id=\"text69893anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.691\" style=\"margin-left:0px;text-indent:0px;line-height:1.620;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69893Font1\" style=\"position:relative;top:-4px;\" >Doorverbinden met declaratieservice.</span ><span class=\"text69893Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text69893.build()
+
+og69880 = new ObjInline('og69880',null,0,0,997,653,1,0)
+og69880.isGrp = true
+og69880.addChild('shape69882')
+og69880.addChild('text69883')
+og69880.addChild('shape69885')
+og69880.build()
+
+shape69882 = new ObjImage('shape69882','images/shape69882.png',null,369,588,629.000000,61.000000,1,45,'div','',0 )
+shape69882.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69882.initHasShadow(1)
+shape69882.initHasReflection(0)
+shape69882.setUniqueFillID('a001_toets_vraag_8_shape69882')
+shape69882.addIe8Attr(369.000000, 588.000000, 629.000000, 61.000000, 0, 0)
+shape69882.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#D6EFF0;"' , '')
+shape69882.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69882)')
+shape69882.setUseSvgFile(1)
+shape69882.addShadow(270,2,1.000000,'b1','e0','e2',177,224,226,0.000000,2)
+shape69882.addBorder(0)
+shape69882.initLineWeight(0)
+shape69882.addOpacity(100)
+shape69882.build()
+
+text69883 = new ObjText('text69883',null,395,610,498,39,1,46,null,'div',null,0 ,'answer-txt')
+text69883.initSLine(1)
+text69883.initHasBullet(0)
+text69883.initRotateAngle(0,0,0)
+text69883.initHasOuterShadow(0)
+text69883.initHasTextShadow(0)
+text69883.initHasBorder(0)
+text69883.initHasOutline(0)
+text69883.initHasMargin(0)
+text69883.addIe8Attr(395, 610, 498, 39, 0, 0)
+text69883.addOpacity(100)
+text69883.arrCSSStyles = new Array();
+text69883.arrCSSStyles.push('span.text69883Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#0068bd;}');
+text69883.arrCSSStyles.push('span.text69883Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69883.addInnerText('<div id=\"text69883\" class=\"answer-txt\"><a id=\"text69883anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.691\" style=\"margin-left:0px;text-indent:0px;line-height:1.620;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69883Font1\" style=\"position:relative;top:-4px;\" >Klant later terugbellen.</span ><span class=\"text69883Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text69883.build()
+
+shape69885 = new ObjImage('shape69885','images/shape69885.png',null,369,588,629.000000,66.000000,1,47,'div','',0 )
+shape69885.initRotateAngle(0,0,0,-0.000000,-0.000000,628,65)
+shape69885.initHasShadow(0)
+shape69885.initHasReflection(0)
+shape69885.setUniqueFillID('a001_toets_vraag_8_shape69885')
+shape69885.addIe8Attr(369.000000, 588.000000, 629.000000, 66.000000, 0, 0)
+shape69885.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,60,628,62,627,64,625,65,623,65,5,65,3,65,2,64,0,62,0,60,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 60.000000 L 627.625000 61.937500 L 626.562500 63.562500 L 624.937500 64.625000 L 623.000000 65.000000 L 5.000000 65.000000 L 3.125000 64.625000 L 1.500000 63.562500 L 0.375000 61.937500 L 0.000000 60.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:none;"' , '')
+shape69885.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAABCCAYAAAAxFyBoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC4SURBVHhe7cEBDQAAAMKg909tDwcEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANyrAYkIAAHalltWAAAAAElFTkSuQmCC' , 'fill:url(#Text_a001_toets_vraag_8_shape69885)')
+shape69885.setUseSvgFile(1)
+shape69885.addBorder(0)
+shape69885.initLineWeight(0)
+shape69885.addOpacity(100)
+shape69885.onUp = shape69885onUp
+shape69885.hasOnUp = true
+shape69885.capture=4
+shape69885.build()
+
+og69876 = new ObjInline('og69876',null,0,0,997,648,1,0)
+og69876.isGrp = true
+og69876.addChild('shape69878')
+og69876.addChild('text69879')
+og69876.build()
+
+shape69878 = new ObjImage('shape69878','images/shape69878.png',null,369,588,629.000000,61.000000,0,48,'div','',0 )
+shape69878.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69878.initHasShadow(1)
+shape69878.initHasReflection(0)
+shape69878.setUniqueFillID('a001_toets_vraag_8_shape69878')
+shape69878.addIe8Attr(369.000000, 588.000000, 629.000000, 61.000000, 0, 0)
+shape69878.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#DD1515;"' , '')
+shape69878.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69878)')
+shape69878.setUseSvgFile(1)
+shape69878.addShadow(270,2,1.000000,'b5','2','2',181,2,2,0.000000,2)
+shape69878.addBorder(0)
+shape69878.initLineWeight(0)
+shape69878.addOpacity(100)
+shape69878.build()
+
+text69879 = new ObjText('text69879',null,395,610,497,33,0,49,null,'div',null,0 ,'answer-txt')
+text69879.initSLine(1)
+text69879.initHasBullet(0)
+text69879.initRotateAngle(0,0,0)
+text69879.initHasOuterShadow(0)
+text69879.initHasTextShadow(0)
+text69879.initHasBorder(0)
+text69879.initHasOutline(0)
+text69879.initHasMargin(0)
+text69879.addIe8Attr(395, 610, 497, 33, 0, 0)
+text69879.addOpacity(100)
+text69879.arrCSSStyles = new Array();
+text69879.arrCSSStyles.push('span.text69879Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#ffffff;}');
+text69879.arrCSSStyles.push('span.text69879Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69879.addInnerText('<div id=\"text69879\" class=\"answer-txt\"><a id=\"text69879anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.691\" style=\"margin-left:0px;text-indent:0px;line-height:1.620;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69879Font1\" style=\"position:relative;top:-4px;\" >Klant later terugbellen.</span ><span class=\"text69879Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text69879.build()
+
+og69872 = new ObjInline('og69872',null,0,0,997,648,1,0)
+og69872.isGrp = true
+og69872.addChild('shape69874')
+og69872.addChild('text69875')
+og69872.build()
+
+shape69874 = new ObjImage('shape69874','images/shape69874.png',null,369,588,629.000000,61.000000,0,50,'div','',0 )
+shape69874.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69874.initHasShadow(1)
+shape69874.initHasReflection(0)
+shape69874.setUniqueFillID('a001_toets_vraag_8_shape69874')
+shape69874.addIe8Attr(369.000000, 588.000000, 629.000000, 61.000000, 0, 0)
+shape69874.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#4B973E;"' , '')
+shape69874.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69874)')
+shape69874.setUseSvgFile(1)
+shape69874.addShadow(270,2,1.000000,'22','6a','17',34,106,23,0.000000,2)
+shape69874.addBorder(0)
+shape69874.initLineWeight(0)
+shape69874.addOpacity(100)
+shape69874.build()
+
+text69875 = new ObjText('text69875',null,395,610,497,30,0,51,null,'div',null,0 ,'answer-txt')
+text69875.initSLine(1)
+text69875.initHasBullet(0)
+text69875.initRotateAngle(0,0,0)
+text69875.initHasOuterShadow(0)
+text69875.initHasTextShadow(0)
+text69875.initHasBorder(0)
+text69875.initHasOutline(0)
+text69875.initHasMargin(0)
+text69875.addIe8Attr(395, 610, 497, 30, 0, 0)
+text69875.addOpacity(100)
+text69875.arrCSSStyles = new Array();
+text69875.arrCSSStyles.push('span.text69875Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#ffffff;}');
+text69875.arrCSSStyles.push('span.text69875Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69875.addInnerText('<div id=\"text69875\" class=\"answer-txt\"><a id=\"text69875anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.691\" style=\"margin-left:0px;text-indent:0px;line-height:1.620;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69875Font1\" style=\"position:relative;top:-4px;\" >Klant later terugbellen.</span ><span class=\"text69875Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text69875.build()
+
+og69868 = new ObjInline('og69868',null,0,0,997,648,1,0)
+og69868.isGrp = true
+og69868.addChild('shape69870')
+og69868.addChild('text69871')
+og69868.build()
+
+shape69870 = new ObjImage('shape69870','images/shape69870.png',null,369,588,629.000000,61.000000,0,52,'div','',0 )
+shape69870.initRotateAngle(0,0,0,-0.000000,-0.000000,628,60)
+shape69870.initHasShadow(1)
+shape69870.initHasReflection(0)
+shape69870.setUniqueFillID('a001_toets_vraag_8_shape69870')
+shape69870.addIe8Attr(369.000000, 588.000000, 629.000000, 61.000000, 0, 0)
+shape69870.initImageMap(1,'5,0,623,0,625,0,627,2,628,3,628,5,628,55,628,57,627,59,625,60,623,60,5,60,3,60,2,59,0,57,0,55,0,5,0,3,2,2,3,0,5,0','M 5.000000 0.000000 L 623.000000 0.000000 L 624.937500 0.375000 L 626.562500 1.500000 L 627.625000 3.062500 L 628.000000 5.000000 L 628.000000 55.000000 L 627.625000 56.937500 L 626.562500 58.562500 L 624.937500 59.625000 L 623.000000 60.000000 L 5.000000 60.000000 L 3.125000 59.625000 L 1.500000 58.562500 L 0.375000 56.937500 L 0.000000 55.000000 L 0.000000 5.000000 L 0.375000 3.062500 L 1.500000 1.500000 L 3.062500 0.375000 L 5.000000 0.000000 z', '', 'fill:#0068BD;"' , '')
+shape69870.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAA/CAYAAACGqz53AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeFYDa4kAATnRMdQAAAAASUVORK5CYII=' , 'fill:url(#Text_a001_toets_vraag_8_shape69870)')
+shape69870.setUseSvgFile(1)
+shape69870.addShadow(270,2,1.000000,'0','28','57',0,40,87,0.000000,2)
+shape69870.addBorder(0)
+shape69870.initLineWeight(0)
+shape69870.addOpacity(100)
+shape69870.build()
+
+text69871 = new ObjText('text69871',null,395,610,497,30,0,53,null,'div',null,0 ,'answer-txt')
+text69871.initSLine(1)
+text69871.initHasBullet(0)
+text69871.initRotateAngle(0,0,0)
+text69871.initHasOuterShadow(0)
+text69871.initHasTextShadow(0)
+text69871.initHasBorder(0)
+text69871.initHasOutline(0)
+text69871.initHasMargin(0)
+text69871.addIe8Attr(395, 610, 497, 30, 0, 0)
+text69871.addOpacity(100)
+text69871.arrCSSStyles = new Array();
+text69871.arrCSSStyles.push('span.text69871Font1 { font-size:16px; font-family:"PT Sans", sans-serif; color:#ffffff;}');
+text69871.arrCSSStyles.push('span.text69871Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69871.addInnerText('<div id=\"text69871\" class=\"answer-txt\"><a id=\"text69871anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.691\" style=\"margin-left:0px;text-indent:0px;line-height:1.620;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69871Font1\" style=\"position:relative;top:-4px;\" >Klant later terugbellen.</span ><span class=\"text69871Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text69871.build()
+
+text69867 = new ObjText('text69867',null,310,210,749,167,1,54,null,'div',null,0 ,'body-txt')
+text69867.initSLine(0)
+text69867.initHasBullet(0)
+text69867.initRotateAngle(0,0,0)
+text69867.initHasOuterShadow(0)
+text69867.initHasTextShadow(0)
+text69867.initHasBorder(0)
+text69867.initHasOutline(0)
+text69867.initHasMargin(0)
+text69867.addIe8Attr(310, 210, 749, 167, 0, 0)
+text69867.addOpacity(100)
+text69867.arrCSSStyles = new Array();
+text69867.arrCSSStyles.push('span.text69867Font1 { font-size:17px; font-family:"PT Sans", sans-serif; color:#002857;}');
+text69867.arrCSSStyles.push('span.text69867Font2 { font-size:17px; font-family:"PT Sans", sans-serif; color:#002857; font-weight:bold;}');
+text69867.addInnerText('<div id=\"text69867\" class=\"body-txt\"><a id=\"text69867anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.661\" style=\"margin-left:0px;text-indent:0px;line-height:1.660;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69867Font1\" style=\"position:relative;top:-4px;\" >Nilaya belt. Ze heeft een accupunctuurbehandeling gehad. Ze stuurde de rekening naar ons, maar kreeg te horen dat de kosten niet worden vergoed. &nbsp;In Mikado zie je dat Nilaya wel verzekerd is voor acupunctuur. Je ziet niet direct waarom de kosten niet vergoed zijn.\n</span ></p >\n<p  legLH=\"1.661\" style=\"margin-left:0px;text-indent:0px;line-height:1.660;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69867Font1\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n&nbsp;</span ></p >\n<p  legLH=\"1.661\" style=\"margin-left:0px;text-indent:0px;line-height:1.660;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69867Font2\" style=\"position:relative;top:-4px;\" >Wat doe je?</span ><span class=\"text69867Font1\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text69867.build()
+
+shape69866 = new ObjImage('shape69866','images/shape69866.png',null,356,362,655.000000,299.000000,0,55,'div','',0 )
+shape69866.initRotateAngle(0,0,0,-0.000000,-0.000000,654,298)
+shape69866.initHasShadow(0)
+shape69866.initHasReflection(0)
+shape69866.setUniqueFillID('a001_toets_vraag_8_shape69866')
+shape69866.addIe8Attr(356.000000, 362.000000, 655.000000, 299.000000, 0, 0)
+shape69866.initImageMap(1,'0,0,654,0,654,298,0,298,0,0','M 0.000000 0.000000 L 654.000000 0.000000 L 654.000000 298.000000 L 0.000000 298.000000 L 0.000000 0.000000 z', '', 'fill:none;"' , '')
+shape69866.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAo8AAAErCAYAAAC/9WkeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMOSURBVHhe7cExAQAAAMKg9U9tDB8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mr15AABqnpDCAAAAABJRU5ErkJggg==' , 'fill:url(#Text_a001_toets_vraag_8_shape69866)')
+shape69866.setUseSvgFile(1)
+shape69866.addBorder(0)
+shape69866.initLineWeight(0)
+shape69866.addOpacity(100)
+shape69866.build()
+
+text69864 = new ObjText('text69864',null,310,146,343,62,1,56,null,'div',null,0 ,'page-title')
+text69864.initSLine(1)
+text69864.initHasBullet(0)
+text69864.initRotateAngle(0,0,0)
+text69864.initHasOuterShadow(0)
+text69864.initHasTextShadow(0)
+text69864.initHasBorder(0)
+text69864.initHasOutline(0)
+text69864.initHasMargin(0)
+text69864.addIe8Attr(310, 146, 343, 62, 0, 0)
+text69864.addOpacity(100)
+text69864.arrCSSStyles = new Array();
+text69864.arrCSSStyles.push('span.text69864Font1 { font-size:29px; font-family:"Titillium Web"; color:#002857; font-weight:bold;}');
+text69864.arrCSSStyles.push('span.text69864Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
+text69864.addInnerText('<div id=\"text69864\" class=\"page-title\"><a id=\"text69864anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text69864Font1\"  >Vraag 8</span ><span class=\"text69864Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
+text69864.build()
+
 arObjs.push(button61187);
 arObjs.push(button61181);
+arObjs.push(button70077);
 arObjs.push(shape61198);
 arObjs.push(image61194);
 arObjs.push(shape61192);
 arObjs.push(text61190);
 arObjs.push(text61189);
+arObjs.push(og69973);
+arObjs.push(image69975);
+arObjs.push(image69979);
+arObjs.push(image69983);
+arObjs.push(image69987);
+arObjs.push(image69991);
+arObjs.push(image69995);
+arObjs.push(image69999);
+arObjs.push(image70003);
+arObjs.push(og69968);
+arObjs.push(og69958);
+arObjs.push(og69946);
+arObjs.push(shape69948);
+arObjs.push(text69949);
+arObjs.push(shape69951);
+arObjs.push(og69942);
+arObjs.push(shape69944);
+arObjs.push(text69945);
+arObjs.push(og69938);
+arObjs.push(shape69940);
+arObjs.push(text69941);
+arObjs.push(og69934);
+arObjs.push(shape69936);
+arObjs.push(text69937);
+arObjs.push(og69924);
+arObjs.push(shape69926);
+arObjs.push(text69927);
+arObjs.push(shape69929);
+arObjs.push(og69920);
+arObjs.push(shape69922);
+arObjs.push(text69923);
+arObjs.push(og69916);
+arObjs.push(shape69918);
+arObjs.push(text69919);
+arObjs.push(og69912);
+arObjs.push(shape69914);
+arObjs.push(text69915);
+arObjs.push(og69902);
+arObjs.push(shape69904);
+arObjs.push(text69905);
+arObjs.push(shape69907);
+arObjs.push(og69898);
+arObjs.push(shape69900);
+arObjs.push(text69901);
+arObjs.push(og69894);
+arObjs.push(shape69896);
+arObjs.push(text69897);
+arObjs.push(og69890);
+arObjs.push(shape69892);
+arObjs.push(text69893);
+arObjs.push(og69880);
+arObjs.push(shape69882);
+arObjs.push(text69883);
+arObjs.push(shape69885);
+arObjs.push(og69876);
+arObjs.push(shape69878);
+arObjs.push(text69879);
+arObjs.push(og69872);
+arObjs.push(shape69874);
+arObjs.push(text69875);
+arObjs.push(og69868);
+arObjs.push(shape69870);
+arObjs.push(text69871);
+arObjs.push(text69867);
+arObjs.push(shape69866);
+arObjs.push(text69864);
 
 
 writeStyleSheets(arObjs);}
@@ -392,6 +1893,25 @@ writeStyleSheets(arObjs);}
 <body onfocus="trivOnFocus()" onResize="ReFlow()">
 
    <DIV id="pageDIV" class="pageDIV">
+<div id="og69973"><a id="og69973anc"></a></div>
+<div id="og69968"><a id="og69968anc"></a></div>
+<div id="og69958"><a id="og69958anc"></a></div>
+<div id="og69946"><a id="og69946anc"></a></div>
+<div id="og69942"><a id="og69942anc"></a></div>
+<div id="og69938"><a id="og69938anc"></a></div>
+<div id="og69934"><a id="og69934anc"></a></div>
+<div id="og69924"><a id="og69924anc"></a></div>
+<div id="og69920"><a id="og69920anc"></a></div>
+<div id="og69916"><a id="og69916anc"></a></div>
+<div id="og69912"><a id="og69912anc"></a></div>
+<div id="og69902"><a id="og69902anc"></a></div>
+<div id="og69898"><a id="og69898anc"></a></div>
+<div id="og69894"><a id="og69894anc"></a></div>
+<div id="og69890"><a id="og69890anc"></a></div>
+<div id="og69880"><a id="og69880anc"></a></div>
+<div id="og69876"><a id="og69876anc"></a></div>
+<div id="og69872"><a id="og69872anc"></a></div>
+<div id="og69868"><a id="og69868anc"></a></div>
    </DIV>
 <script>
 if( is.min ){
@@ -408,11 +1928,59 @@ if( is.min ){
 if( is.min ){
     appendElement(button61187, null, null);
     appendElement(button61181, null, null);
+    appendElement(button70077, null, null);
     appendElement(shape61198, null, null);
     appendElement(image61194, null, null);
     appendElement(shape61192, null, null);
     appendElement(text61190, null, null);
     appendElement(text61189, null, null);
+    appendElement(image69975, null, null);
+    appendElement(image69979, null, null);
+    appendElement(image69983, null, null);
+    appendElement(image69987, null, null);
+    appendElement(image69991, null, null);
+    appendElement(image69995, null, null);
+    appendElement(image69999, null, null);
+    appendElement(image70003, null, null);
+    appendElement(shape69948, null, null);
+    appendElement(text69949, null, null);
+    appendElement(shape69951, null, null);
+    appendElement(shape69944, null, null);
+    appendElement(text69945, null, null);
+    appendElement(shape69940, null, null);
+    appendElement(text69941, null, null);
+    appendElement(shape69936, null, null);
+    appendElement(text69937, null, null);
+    appendElement(shape69926, null, null);
+    appendElement(text69927, null, null);
+    appendElement(shape69929, null, null);
+    appendElement(shape69922, null, null);
+    appendElement(text69923, null, null);
+    appendElement(shape69918, null, null);
+    appendElement(text69919, null, null);
+    appendElement(shape69914, null, null);
+    appendElement(text69915, null, null);
+    appendElement(shape69904, null, null);
+    appendElement(text69905, null, null);
+    appendElement(shape69907, null, null);
+    appendElement(shape69900, null, null);
+    appendElement(text69901, null, null);
+    appendElement(shape69896, null, null);
+    appendElement(text69897, null, null);
+    appendElement(shape69892, null, null);
+    appendElement(text69893, null, null);
+    appendElement(shape69882, null, null);
+    appendElement(text69883, null, null);
+    appendElement(shape69885, null, null);
+    appendElement(shape69878, null, null);
+    appendElement(text69879, null, null);
+    appendElement(shape69874, null, null);
+    appendElement(text69875, null, null);
+    appendElement(shape69870, null, null);
+    appendElement(text69871, null, null);
+    appendElement(text69867, null, null);
+    appendElement(shape69866, null, null);
+    appendElement(text69864, null, null);
 }
 </script>
 

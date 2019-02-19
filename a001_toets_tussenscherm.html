@@ -222,7 +222,7 @@ function trivLeavePage() {
 }
 
 function trivPrevPage() {
-    trivExitPage( 'a001_toets_vraag_10.html', true )
+    trivExitPage( 'a001_toets_vraag_8.html', true )
 }
 
 function trivNextPage() {
@@ -250,7 +250,7 @@ function action60734else(fn){
 }
 
 function action60734(fn){
-    if(Vartoets_score.equals('4'))
+    if(Vartoets_score.equals('8'))
     {trivExitPage('a001_toets_voltooid.html',true); 
     }else{ action60734else();}
     if(fn && typeof(fn) == 'string' ) eval(fn);
@@ -264,7 +264,7 @@ function action60735else(fn){
 }
 
 function action60735(fn){
-    if(Vartoets_score.lessThan('4'))
+    if(Vartoets_score.lessThan('8'))
     {trivExitPage('a001_toets_resultaat.html',true); 
     }else{ action60735else();}
     if(fn && typeof(fn) == 'string' ) eval(fn);
@@ -282,7 +282,7 @@ function button61187onUp() {
 }
 
 function action61182(fn){
-    trivExitPage('a001_hoofdmenu_video.html',true); 
+    trivExitPage('a001_hoofdmenu_hoofdmenu.html',true); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();
 }
