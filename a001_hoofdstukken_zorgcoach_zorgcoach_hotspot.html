@@ -576,6 +576,12 @@ function action45449(fn){
     else if(fn && typeof(fn) == 'function' ) fn();
 }
 
+function action45450(fn){
+    og18921.actionHide(); 
+    if(fn && typeof(fn) == 'string' ) eval(fn);
+    else if(fn && typeof(fn) == 'function' ) fn();
+}
+
 function action45451(fn){
     button45456.actionShow(); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
@@ -583,7 +589,7 @@ function action45451(fn){
 }
 
 function button45448onUp() {
-  action45449();action45451();
+  action45449();action45450();action45451();
 }
 
 function shape18865actionShow() {
