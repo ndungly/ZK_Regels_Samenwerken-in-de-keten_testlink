@@ -20,7 +20,7 @@
 <!--[if lt IE 7]>
 <style type="text/css">
     #image76996 img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
-    #image76996 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/declaratieoverzicht_slider.png',sizingMethod='scale'); }
+    #image76996 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/ds_intro.png',sizingMethod='scale'); }
     #image77015 img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
     #image77015 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/uitroepteken.png',sizingMethod='scale'); }
 </style>
@@ -115,6 +115,7 @@ var arVariables = [];
 
 VarTrivSelCap = new Variable( 'VarTrivSelCap', 'none', 0, 0, null, null, 'regels_samenwerken_in_de_keten', true )
 VarF1_visited = new Variable( 'VarF1_visited', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
+VarDS1_visited = new Variable( 'VarDS1_visited', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
 
 onload = init
 if( is.webkit && !is.iOSSafari )
@@ -286,7 +287,7 @@ function action76981else(fn){
 }
 
 function action76981(fn){
-    if(VarF1_visited.equals('1'))
+    if(VarDS1_visited.equals('1'))
     {button76986.actionShow(); 
     }else{ action76981else();}
     if(fn && typeof(fn) == 'string' ) eval(fn);
@@ -594,7 +595,7 @@ audio76990 = new ObjMedia('audio76990',null,692,351,1,1,0,13,'media/audio_declar
 audio76990.BuildMediaString()
 audio76990.build()
 
-image76996 = new ObjImage('image76996','images/declaratieoverzicht_slider.png',null,698,137,535,561,1,14,'div',null, 0 )
+image76996 = new ObjImage('image76996','images/ds_intro.png',null,698,137,535,561,1,14,'div',null, 0 )
 image76996.initRotateAngle(0,0,0,0,0,0,0)
 image76996.initHasShadow(0)
 image76996.initHasReflection(0)

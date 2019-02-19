@@ -112,12 +112,10 @@ trivSetupPage();
 var arVariables = [];
 
 VarTrivSelCap = new Variable( 'VarTrivSelCap', 'none', 0, 0, null, null, 'regels_samenwerken_in_de_keten', true )
-VarVVL3_visited = new Variable( 'VarVVL3_visited', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
-VarVB3_visited = new Variable( 'VarVB3_visited', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
-VarF3_visited = new Variable( 'VarF3_visited', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
 VarEntry_0019 = new Variable( 'VarEntry_0019', 'Vul hier je antwoord in.', 0, 0, null, null, 'regels_samenwerken_in_de_keten', false )
 VarEntry_0020 = new Variable( 'VarEntry_0020', 'Vul hier je antwoord in.', 0, 0, null, null, 'regels_samenwerken_in_de_keten', false )
 VarEntry_0021 = new Variable( 'VarEntry_0021', 'Vul hier je antwoord in.', 0, 0, null, null, 'regels_samenwerken_in_de_keten', false )
+VarDS3_visited = new Variable( 'VarDS3_visited', '0', 0, 0, null, 365, 'regels_samenwerken_in_de_keten', false )
 
 onload = init
 if( is.webkit && !is.iOSSafari )
@@ -336,7 +334,7 @@ function action76910else(fn){
 }
 
 function action76910(fn){
-    if(VarVVL3_visited.equals('1'))
+    if(VarDS3_visited.equals('1'))
     {button76916.actionHide(); 
     }else{ action76910else();}
     if(fn && typeof(fn) == 'string' ) eval(fn);
@@ -350,7 +348,7 @@ function action76911else(fn){
 }
 
 function action76911(fn){
-    if(VarVB3_visited.equals('1'))
+    if(VarDS3_visited.equals('1'))
     {button76931.actionShow(); 
     }else{ action76911else();}
     if(fn && typeof(fn) == 'string' ) eval(fn);
@@ -384,7 +382,7 @@ function action76917(fn){
 }
 
 function action76918(fn){
-    VarF3_visited.set('1'); 
+    VarDS3_visited.set('1'); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();
 }
@@ -684,10 +682,10 @@ text76924.addIe8Attr(159, 163, 480, 89, 0, 0)
 text76924.addOpacity(100)
 text76924.arrCSSStyles = new Array();
 text76924.arrCSSStyles.push('span.text76924Font1 { font-size:29px; font-family:"Titillium Web"; color:#002857; font-weight:bold;}');
-text76924.addInnerText('<div id=\"text76924\" class=\"page-title\"><a id=\"text76924anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.173\" style=\"margin-left:0px;text-indent:0px;line-height:1.173;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text76924Font1\"  >Wanneer verbind je door naar financieel?\n</span ></p >\n</div>\n');
+text76924.addInnerText('<div id=\"text76924\" class=\"page-title\"><a id=\"text76924anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.173\" style=\"margin-left:0px;text-indent:0px;line-height:1.173;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text76924Font1\"  >Wanneer overleg je met de declaratieservice?\n</span ></p >\n</div>\n');
 text76924.build()
 
-text76925 = new ObjText('text76925',null,159,281,470,99,1,14,null,'div',null,0 ,'body-txt')
+text76925 = new ObjText('text76925',null,159,281,470,133,1,14,null,'div',null,0 ,'body-txt')
 text76925.initSLine(0)
 text76925.initHasBullet(0)
 text76925.initRotateAngle(0,0,0)
@@ -696,15 +694,16 @@ text76925.initHasTextShadow(0)
 text76925.initHasBorder(0)
 text76925.initHasOutline(0)
 text76925.initHasMargin(0)
-text76925.addIe8Attr(159, 281, 470, 99, 0, 0)
+text76925.addIe8Attr(159, 281, 470, 133, 0, 0)
 text76925.addOpacity(100)
 text76925.arrCSSStyles = new Array();
 text76925.arrCSSStyles.push('span.text76925Font1 { font-size:17px; font-family:"PT Sans", sans-serif; color:#002857;}');
-text76925.arrCSSStyles.push('span.text76925Font2 { font-size:17px; font-family:"PT Sans", sans-serif; color:#000000;}');
-text76925.addInnerText('<div id=\"text76925\" class=\"body-txt\"><a id=\"text76925anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.661\" style=\"margin-left:0px;text-indent:0px;line-height:1.660;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text76925Font1\" style=\"position:relative;top:-4px;\" >Je kunt niet alle klantvragen zelf beantwoorden. Klantvragen die passen bij de kerntaken van financieel verbinden we door. Erik belt voor een betalingsregeling van zijn premie achterstand. </span ><span class=\"text76925Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text76925.arrCSSStyles.push('span.text76925Font2 { font-size:17px; font-family:"PT Sans", sans-serif; color:#002857; font-weight:bold;}');
+text76925.arrCSSStyles.push('span.text76925Font3 { font-size:17px; font-family:"PT Sans", sans-serif; color:#000000;}');
+text76925.addInnerText('<div id=\"text76925\" class=\"body-txt\"><a id=\"text76925anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.661\" style=\"margin-left:0px;text-indent:0px;line-height:1.660;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text76925Font1\" style=\"position:relative;top:-4px;\" >Kan je het antwoord niet vinden op Brein? Of heeft klant vragen over de status van een nota die je niet zelf kunt beantwoorden? Je kan dan </span ><span class=\"text76925Font2\" style=\"position:relative;top:-4px;\" >overleggen </span ><span class=\"text76925Font1\" style=\"position:relative;top:-4px;\" >met de declaratieservice. Als je de declaratieservice niet kunt bereiken stuur je een </span ><span class=\"text76925Font2\" style=\"position:relative;top:-4px;\" >WOF</span ><span class=\"text76925Font1\" style=\"position:relative;top:-4px;\" >. </span ><span class=\"text76925Font3\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
 text76925.build()
 
-text76926 = new ObjText('text76926',null,159,400,503,50,1,15,null,'div',null,0 ,'body-bold')
+text76926 = new ObjText('text76926',null,159,428,503,50,1,15,null,'div',null,0 ,'body-bold')
 text76926.initSLine(0)
 text76926.initHasBullet(0)
 text76926.initRotateAngle(0,0,0)
@@ -713,7 +712,7 @@ text76926.initHasTextShadow(0)
 text76926.initHasBorder(0)
 text76926.initHasOutline(0)
 text76926.initHasMargin(0)
-text76926.addIe8Attr(159, 400, 503, 50, 0, 0)
+text76926.addIe8Attr(159, 428, 503, 50, 0, 0)
 text76926.addOpacity(100)
 text76926.arrCSSStyles = new Array();
 text76926.arrCSSStyles.push('span.text76926Font1 { font-size:17px; font-family:"PT Sans", sans-serif; color:#002857; font-weight:bold;}');
@@ -820,7 +819,7 @@ shape76951.initLineWeight(0)
 shape76951.addOpacity(100)
 shape76951.build()
 
-text76952 = new ObjText('text76952',null,750,396,438,133,0,23,null,'div',null,0 ,'body-txt')
+text76952 = new ObjText('text76952',null,750,380,438,133,0,23,null,'div',null,0 ,'body-txt')
 text76952.initSLine(0)
 text76952.initHasBullet(0)
 text76952.initRotateAngle(0,0,0)
@@ -829,15 +828,15 @@ text76952.initHasTextShadow(0)
 text76952.initHasBorder(0)
 text76952.initHasOutline(0)
 text76952.initHasMargin(0)
-text76952.addIe8Attr(750, 396, 438, 133, 0, 0)
+text76952.addIe8Attr(750, 380, 438, 133, 0, 0)
 text76952.addOpacity(100)
 text76952.arrCSSStyles = new Array();
 text76952.arrCSSStyles.push('span.text76952Font1 { font-size:17px; font-family:"PT Sans", sans-serif; color:#ffffff;}');
 text76952.arrCSSStyles.push('span.text76952Font2 { font-size:16px; font-family:"Arial", sans-serif; color:#010101;}');
-text76952.addInnerText('<div id=\"text76952\" class=\"body-txt\"><a id=\"text76952anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.661\" style=\"margin-left:0px;text-indent:0px;line-height:1.660;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text76952Font1\" style=\"position:relative;top:-4px;\" >In Brein vind je bij welke klantvragen je doorverbindt naar financieel. Op de volgende pagina zie je een aantal voorbeelden.</span ><span class=\"text76952Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
+text76952.addInnerText('<div id=\"text76952\" class=\"body-txt\"><a id=\"text76952anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.661\" style=\"margin-left:0px;text-indent:0px;line-height:1.660;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text76952Font1\" style=\"position:relative;top:-4px;\" >Als back office ondersteunt de declaratieservice waar nodig. Je zult in praktijk niet vaak een klant doorverbinden. Op de volgende pagina zie je een aantal klantvragen waarbij je met hen overlegt.</span ><span class=\"text76952Font2\" style=\"background-color:transparentposition:relative;top:-4px;\" >\n</span ></p >\n</div>\n');
 text76952.build()
 
-text76953 = new ObjText('text76953',null,750,342,428,50,0,24,null,'div',null,0 ,'body-bold')
+text76953 = new ObjText('text76953',null,750,330,428,50,0,24,null,'div',null,0 ,'body-bold')
 text76953.initSLine(0)
 text76953.initHasBullet(0)
 text76953.initRotateAngle(0,0,0)
@@ -846,7 +845,7 @@ text76953.initHasTextShadow(0)
 text76953.initHasBorder(0)
 text76953.initHasOutline(0)
 text76953.initHasMargin(0)
-text76953.addIe8Attr(750, 342, 428, 50, 0, 0)
+text76953.addIe8Attr(750, 330, 428, 50, 0, 0)
 text76953.addOpacity(100)
 text76953.arrCSSStyles = new Array();
 text76953.arrCSSStyles.push('span.text76953Font1 { font-size:19px; font-family:"PT Sans", sans-serif; color:#ffffff; font-weight:bold;}');
