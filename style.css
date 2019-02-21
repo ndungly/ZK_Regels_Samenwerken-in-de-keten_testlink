@@ -163,10 +163,6 @@
     font-weight: bold;
 }
 
-.quote-txt {
-    font-family: "Titillium Web SemiBold";
-}
-
 .header-title {
     font-family: "Titillium Web";
     font-weight: bold;
@@ -241,6 +237,9 @@
     font-family: "PT Sans";
 }
 
+.answer-txt {
+    font-family: "PT Sans";
+}
 
 
 /* Open tekstvelden stylen - doet het helaas niet. Entry fields moeten met JS een class toegewezen krijgen. */
